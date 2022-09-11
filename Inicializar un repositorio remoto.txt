@@ -1,0 +1,10 @@
+# Primero se debe inicializar el repositorio
+git init
+# Agregar todos los archivos del repositorio
+git add .  
+# Realizar el commit
+git commit -m "Descripcion commit"
+# indicar que el repositorio local se suba al repositorio remoto, indicado mediante el link del repositorio
+git remote add origin https://github.com/criss150595/Practicas_Devnet.git
+# realizar el git push
+git push -u origin master
