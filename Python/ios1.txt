@@ -1,0 +1,556 @@
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router2#terminal length 0
+Router2#
+Router2#
+Router2#show environment summary
+               ^
+% Invalid input detected at '^' marker.
+
+Router2#
+Router2#show cdp neighbor
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+Router2.********.com
+                 Gig 0/0           158              R B             Gig 0/1
+Router2.********.com
+                 Gig 0/1           158              R B             Gig 0/0
+RouterCisco.********.com
+                 Gig 0/1           132              R B             Gig 0/0
+RouterCisco.********.com
+                 Gig 0/0           132              R B             Gig 0/0
+
+Total cdp entries displayed : 4
+Router2#
+Router2#show cdp neighbor detail
+-------------------------
+Device ID: Router2.********.com
+Entry address(es): 
+  IP address: 172.31.1.1
+Platform: Cisco ,  Capabilities: Router Source-Route-Bridge 
+Interface: GigabitEthernet0/0,  Port ID (outgoing port): GigabitEthernet0/1
+Holdtime : 158 sec
+
+Version :
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.********.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-16 16:19 by prod_rel_team
+
+advertisement version: 2
+Duplex: half
+Management address(es): 
+  IP address: 172.31.1.1
+
+-------------------------
+Device ID: Router2.********.com
+Entry address(es): 
+  IP address: 192.168.138.131
+Platform: Cisco ,  Capabilities: Router Source-Route-Bridge 
+Interface: GigabitEthernet0/1,  Port ID (outgoing port): GigabitEthernet0/0
+Holdtime : 158 sec
+
+Version :
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.********.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-16 16:19 by prod_rel_team
+
+advertisement version: 2
+Duplex: half
+Management address(es): 
+  IP address: 192.168.138.131
+
+-------------------------
+Device ID: RouterCisco.********.com
+Entry address(es): 
+  IP address: 192.168.138.130
+Platform: Cisco ,  Capabilities: Router Source-Route-Bridge 
+Interface: GigabitEthernet0/1,  Port ID (outgoing port): GigabitEthernet0/0
+Holdtime : 132 sec
+
+Version :
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.********.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-16 16:19 by prod_rel_team
+
+advertisement version: 2
+Duplex: half
+Management address(es): 
+  IP address: 192.168.138.130
+
+-------------------------
+Device ID: RouterCisco.********.com
+Entry address(es): 
+  IP address: 192.168.138.130
+Platform: Cisco ,  Capabilities: Router Source-Route-Bridge 
+Interface: GigabitEthernet0/0,  Port ID (outgoing port): GigabitEthernet0/0
+Holdtime : 132 sec
+
+Version :
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.********.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-16 16:19 by prod_rel_team
+
+advertisement version: 2
+Duplex: half
+Management address(es): 
+  IP address: 192.168.138.130
+
+
+Total cdp entries displayed : 4
+Router2#
+Router2#show interface description
+Interface                      Status         Protocol Description
+Gi0/0                          up             up       
+Gi0/1                          up             up       "ITC test interface ITC"
+Gi0/2                          admin down     down     
+Gi0/3                          admin down     down     
+Router2#
+Router2#show inventory
+NAME: "IOSv", DESCR: "IOSv chassis, Hw Serial#: 90CAFNMWL1FUM5G9JOF22, Hw Revision: 1.0"
+PID: IOSv              , VID: 1.0, SN: 90CAFNMWL1FUM5G9JOF22
+
+
+Router2#
+Router2#show version
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.********.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-16 16:19 by prod_rel_team
+
+
+ROM: Bootstrap program is IOSv
+
+Router2 uptime is 5 hours, 42 minutes
+System returned to ROM by reload
+System image file is "flash0:/vios-adventerprisek9-m"
+Last reload reason: Unknown reason
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.********.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@********.com.
+
+Cisco IOSv (revision 1.0) with  with 984441K/62464K bytes of memory.
+Processor board ID 90CAFNMWL1FUM5G9JOF22
+4 Gigabit Ethernet interfaces
+DRAM configuration is 72 bits wide with parity disabled.
+256K bytes of non-volatile configuration memory.
+2097152K bytes of ATA System CompactFlash 0 (Read/Write)
+0K bytes of ATA CompactFlash 1 (Read/Write)
+0K bytes of ATA CompactFlash 2 (Read/Write)
+0K bytes of ATA CompactFlash 3 (Read/Write)
+
+
+
+Configuration register is 0x0
+
+Router2#
+Router2#dir all
+Directory of flash0:/
+
+    1  drw-           0  Jan 30 2013 00:00:00 +00:00  boot
+  264  drw-           0  Oct 14 2013 00:00:00 +00:00  config
+  267  -rw-   143178592  Mar 22 2016 00:00:00 +00:00  vios-adventerprisek9-m
+  270  -rw-      524288  Aug 22 2022 20:21:30 +00:00  nvram
+  271  -rw-          79  Sep 10 2022 21:28:10 +00:00  e1000_bia.txt
+
+2142715904 bytes total (1994403840 bytes free)
+Directory of archive:/
+
+No files in directory
+
+No space information available
+Directory of system:/
+
+    2  -r--           0                    <no date>  default-running-config
+    4  dr-x           0                    <no date>  memory
+    1  -rw-        3256                    <no date>  running-config
+    3  dr-x           0                    <no date>  vfiles
+
+No space information available
+Directory of nvram:/
+
+  249  -rw-        3168                    <no date>  startup-config
+  250  ----        1907                    <no date>  private-config
+    1  ----          41                    <no date>  udi
+    2  ----          23                    <no date>  persistent-data
+    3  -rw-          17                    <no date>  ecfm_ieee_mib
+
+262144 bytes total (253945 bytes free)
+Directory of tmpsys:/
+
+    6  drw-           0                    <no date>  eem_lib_system
+    5  drw-           0                    <no date>  eem_lib_user
+   18  -rw-           0                    <no date>  eem_pnt_0
+   20  -rw-           0                    <no date>  eem_pnt_1
+   38  -rw-           0                    <no date>  eem_pnt_10
+   40  -rw-           0                    <no date>  eem_pnt_11
+   42  -rw-           0                    <no date>  eem_pnt_12
+   44  -rw-           0                    <no date>  eem_pnt_13
+   46  -rw-           0                    <no date>  eem_pnt_14
+   48  -rw-           0                    <no date>  eem_pnt_15
+   22  -rw-           0                    <no date>  eem_pnt_2
+   24  -rw-           0                    <no date>  eem_pnt_3
+   26  -rw-           0                    <no date>  eem_pnt_4
+   28  -rw-           0                    <no date>  eem_pnt_5
+   30  -rw-           0                    <no date>  eem_pnt_6
+   32  -rw-           0                    <no date>  eem_pnt_7
+   34  -rw-           0                    <no date>  eem_pnt_8
+   36  -rw-           0                    <no date>  eem_pnt_9
+    4  drw-           0                    <no date>  eem_policy
+    8  drw-           0                    <no date>  eem_pub
+   17  -rw-           0                    <no date>  eem_rpc_0
+   19  -rw-           0                    <no date>  eem_rpc_1
+   37  -rw-           0                    <no date>  eem_rpc_10
+   39  -rw-           0                    <no date>  eem_rpc_11
+   41  -rw-           0                    <no date>  eem_rpc_12
+   43  -rw-           0                    <no date>  eem_rpc_13
+   45  -rw-           0                    <no date>  eem_rpc_14
+   47  -rw-           0                    <no date>  eem_rpc_15
+   21  -rw-           0                    <no date>  eem_rpc_2
+   23  -rw-           0                    <no date>  eem_rpc_3
+   25  -rw-           0                    <no date>  eem_rpc_4
+   27  -rw-           0                    <no date>  eem_rpc_5
+   29  -rw-           0                    <no date>  eem_rpc_6
+   31  -rw-           0                    <no date>  eem_rpc_7
+   33  -rw-           0                    <no date>  eem_rpc_8
+   35  -rw-           0                    <no date>  eem_rpc_9
+    7  drw-           0                    <no date>  eem_temp
+    1  dr-x           0                    <no date>  lib
+    9  drw-           0                    <no date>  macro_scripts
+
+No space information available
+Router2#
+Router2#show bootvar
+BOOT variable does not exist
+CONFIG_FILE variable does not exist
+BOOTLDR variable does not exist
+WARM_REBOOT variable does not exist
+Configuration register is 0x0
+
+IOSv GRUB info:
+
+GRUB multiboot info:
+  IOMEM percent       '25'
+  Boot loader         'GRUB 2.00'
+  Command line        '/vios-adventerprisek9-m'
+  Memory size         1022Mb, low 639K, high 1047544K
+  Multiboot info      0x06481630, flags 0x00000247
+  Boot device         0x8000FFFF
+  Memory map          0x0648188E (168 bytes)
+    0x00000000 .. 0x0009FBFF (     639K, available)
+    0x0009FC00 .. 0x0009FFFF (       1K, reserved)
+    0x000F0000 .. 0x000FFFFF (      64K, reserved)
+    0x00100000 .. 0x3FFFDFFF ( 1047544K, available)
+    0x3FFFE000 .. 0x3FFFFFFF (       8K, reserved)
+    0xFEFFC000 .. 0xFEFFFFFF (      16K, reserved)
+    0xFFFC0000 .. 0xFFFFFFFF (     256K, reserved)
+Linker:
+  _initdata_start     0x77CE92C
+  _data1_start        0x8562E80
+  _initdata_end       0x8562E68
+
+Router memory: 1022Mb, 1072030720 bytes
+
+Router2#
+Router2#show running-config
+Building configuration...
+
+  
+Current configuration : 3256 bytes
+!
+! Last configuration change at 01:16:06 UTC Sun Sep 11 2022 by ********
+!
+version 15.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging buffered 20010
+no logging console
+!
+no aaa new-model
+ethernet lmi ce
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain name ********.com
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+domain ********.com
+!
+!
+!
+username ******** privilege 15 password 0 ********
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 192.168.138.131 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ description "ITC test interface ITC"
+ ip address 172.31.1.1 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 1
+ router-id 1.1.1.1
+ network 1.1.1.1 0.0.0.0 area 0
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip ssh version 2
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+line vty 0 4
+ login local
+ transport input telnet ssh
+ transport output telnet ssh
+!
+no scheduler allocate
+!
+end
+
+Router2#
+Router2#Show run | include classe-map
+Router2#
+Router2#Show run | include policy-map
+Router2#
+Router2#show logging
+Syslog logging: enabled (0 messages dropped, 3 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 15 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (8192 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 55 message lines logged
+        Logging Source-Interface:       VRF Name:
+
+Log Buffer (20010 bytes):
+
+*Sep 11 00:56:16.716: %SYS-5-LOG_CONFIG_CHANGE: Buffer logging: level debugging, xml disabled, filtering disabled, size (20000)
+*Sep 11 00:56:16.777: %SYS-5-LOG_CONFIG_CHANGE: Buffer logging: level debugging, xml disabled, filtering disabled, size (20010)
+*Sep 11 00:56:16.821: %SYS-5-LOG_CONFIG_CHANGE: Console logging disabled
+*Sep 11 00:56:16.856: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 00:56:45.971: %SYS-5-CONFIG_I: Configured from console by console
+*Sep 11 00:58:26.124: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 00:59:35.434: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 01:01:03.201: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 01:01:08.555: %SYS-5-CONFIG_I: Configured from console by console
+*Sep 11 01:04:48.123: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 01:05:02.516: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 01:15:26.932: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 01:15:36.993: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 01:15:56.101: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+*Sep 11 01:16:06.177: %SYS-5-CONFIG_I: Configured from console by ******** on vty0 (192.168.138.1)
+Router2#
+Router2#show ntp config
+ Ntp process is not runing
+Router2#
+Router2#show ip mroute
+IP Multicast Forwarding is not enabled.
+IP Multicast Routing Table
+Flags: D - Dense, S - Sparse, B - Bidir Group, s - SSM Group, C - Connected,
+       L - Local, P - Pruned, R - RP-bit set, F - Register flag,
+       T - SPT-bit set, J - Join SPT, M - MSDP created entry, E - Extranet,
+       X - Proxy Join Timer Running, A - Candidate for MSDP Advertisement,
+       U - URD, I - Received Source Specific Host Report, 
+       Z - Multicast Tunnel, z - MDT-data group sender, 
+       Y - Joined MDT-data group, y - Sending to MDT-data group, 
+       G - Received BGP C-Mroute, g - Sent BGP C-Mroute, 
+       N - Received BGP Shared-Tree Prune, n - BGP C-Mroute suppressed, 
+       Q - Received BGP S-A Route, q - Sent BGP S-A Route, 
+       V - RD & Vector, v - Vector, p - PIM Joins on route, 
+       x - VxLAN group
+Outgoing interface flags: H - Hardware switched, A - Assert winner, p - PIM Join
+ Timers: Uptime/Expires
+ Interface state: Interface, Next-Hop or VCD, State/Mode
+
+Router2#
+Router2#Show running | i  username
+username ******** privilege 15 password 0 ********
+Router2#
+Router2#Show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         192.168.138.131 YES NVRAM  up                    up      
+GigabitEthernet0/1         172.31.1.1      YES NVRAM  up                    up      
+GigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    
+Router2#
+Router2#Show run  interface Loopback0
+                                    ^
+% Invalid input detected at '^' marker.
+
+Router2#
+Router2#Show ip ospf neighbor
+Router2#
+Router2#Show ip bgp summary
+% BGP not active
+
+Router2#
+Router2#Show run | include mpls
+Router2#
+Router2#Show mpls ldp neighbor | in Peer
+Router2#
+Router2#Show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      172.31.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        172.31.1.0/24 is directly connected, GigabitEthernet0/1
+L        172.31.1.1/32 is directly connected, GigabitEthernet0/1
+      192.168.138.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.138.0/24 is directly connected, GigabitEthernet0/0
+L        192.168.138.131/32 is directly connected, GigabitEthernet0/0
+Router2#
+Router2#Show ip route 200.87.254.101
+% Network not in table
+Router2#
+Router2#Show ip bgp nei
+% BGP not active
+
+Router2#
+Router2#exit

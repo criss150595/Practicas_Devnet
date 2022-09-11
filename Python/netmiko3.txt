@@ -1,0 +1,289 @@
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Router2#
+Router2#terminal width 511
+Router2#terminal length 0
+Router2#
+Router2#
+Router2#show platform
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.********.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-16 16:19 by prod_rel_team
+
+Disk: flash0: 16 heads, 4161 cylinders, 512 sector size
+  Device    Boot Sec/Cl StartS  EndS         System
+  fatdisk    *     8    63      4193279 FAT32 LBA(12) 1.99GB
+
+  Total size 1.99GB, 2146927104 bytes, sectors 4193217
+
+GRUB multiboot info:
+  IOMEM percent       '25'
+  Boot loader         'GRUB 2.00'
+  Command line        '/vios-adventerprisek9-m'
+  Memory size         1022Mb, low 639K, high 1047544K
+  Multiboot info      0x06481630, flags 0x00000247
+  Boot device         0x8000FFFF
+  Memory map          0x0648188E (168 bytes)
+    0x00000000 .. 0x0009FBFF (     639K, available)
+    0x0009FC00 .. 0x0009FFFF (       1K, reserved)
+    0x000F0000 .. 0x000FFFFF (      64K, reserved)
+    0x00100000 .. 0x3FFFDFFF ( 1047544K, available)
+    0x3FFFE000 .. 0x3FFFFFFF (       8K, reserved)
+    0xFEFFC000 .. 0xFEFFFFFF (      16K, reserved)
+    0xFFFC0000 .. 0xFFFFFFFF (     256K, reserved)
+Linker:
+  _initdata_start     0x77CE92C
+  _data1_start        0x8562E80
+  _initdata_end       0x8562E68
+
+Router memory: 1022Mb, 1072030720 bytes
+
+Program counter profiling:
+
+      PC             Invoked
+  ----------------------------------
+
+Interrupt service routine profiling:
+
+  IOAPIC IntCaught IntBlockd      TotalCycle   AvgCycles Name
+  ------------------------------------------------------------------
+
+Probes profiling:
+
+     Invoked     TotalCycle      AvgCycles Caller PC / Name
+  ---------------------------------------------------------------------
+    42018449   835756185821          19890 0x00276CB4/ISR raise level
+    42018328  1620518304588          38566 0x00276D14/ISR reset level
+    23750136    57287341561           2412 0x00158CCB/PIC 0 (timer)
+    23750136    33111535700           1394 0x00158095/PC ISR clock tick
+         333       10676328          32061 0x00266F1E/ISR set level
+           2      209277379      104638689 0x00212FFA/Buffer init
+           1    23321497160    23321497160 0x001572BE/Filesys pre init
+           3     5038062809     1679354269 0x0015F20A/PCI discover
+       41134     2330310746          56651 0x001604E7/VirtIO req
+      371083       23543353             63 0x00160D9D/VirtIO ring alloc
+       41134     2102587031          51115 0x00161007/VirtIO ring write
+       41134     2093767135          50901 0x00162188/VirtIO ring write done
+       41134    51448264170        1250747 0x001605FD/VirtIO queue read
+       41134    26243254432         637994 0x001605FD/VirtIO queue read wait
+       41134    25199245934         612613 0x00162427/VirtIO ring read done
+       72745    62939165349         865202 0x001596CB/PIC 10 (pci)
+           1     2245654710     2245654710 0x0105E697/PD interface init
+           1     5028350120     5028350120 0x001260BA/Interface init
+           1        9566206        9566206 0x0105E9B5/Filesys init
+        7513     6770222976         901134 0x001597CB/PIC 11 (pci)
+           1       10398180       10398180 0x0105E87C/Line init
+      234921    38954618111         165820 0x03A88F60/AUX/CON poller
+      249325    40088692485         160788 0x00130D7D/TTY read
+           1    64882825370    64882825370 0x03A88F60/Code sign
+      227102   221162245888         973845 0x03A88F60/e1000 sw poller
+      308160              0              0 0x00000000/VIRTIO ack
+         945     1172622805        1240870 0x00159BCB/PIC 15 (harddisk)
+       14404    20286377793        1408385 0x001590CB/PIC 4 (con)
+       11324    18973971431        1675553 0x00130D7D/TTY read thre
+        1411      351556777         249154 0x00130D7D/TTY read to
+           1        1779700        1779700 0x00130D7D/TTY read avail
+           2     1627610088      813805044 0x00147C3C/E1000 BIA record
+           1        1343914        1343914 0x0015CBDF/PC profiling
+
+% CPU profiling needs to be enabled via;
+    'test platform profile start'
+
+CPU information:
+  Running at 2591 ticks per millisecond
+  Watchdog is not present
+
+CPU capabilities:
+      Supported,  MSR (Model Specific Register)
+      Supported,  APIC (Advanced Programmable Interrupt Controller)
+      Supported,  SSE3
+  NOT supported,  PCL-MUL
+  NOT supported,  DTES-64
+  NOT supported,  MONITOR
+  NOT supported,  DS CPL
+  NOT supported,  VMX
+  NOT supported,  SMX
+  NOT supported,  EST
+  NOT supported,  TM2
+  NOT supported,  SSSE3
+  NOT supported,  CID
+  NOT supported,  FMA
+  NOT supported,  CX16
+  NOT supported,  ETPRD
+  NOT supported,  PDCM
+  NOT supported,  DCA
+  NOT supported,  SSE4.1
+  NOT supported,  SSE4.2
+  NOT supported,  X2-APIC
+  NOT supported,  MOVBE
+      Supported,  POP-CNT
+  NOT supported,  AES
+  NOT supported,  X-SAVE
+  NOT supported,  OSX-SAVE
+  NOT supported,  AVX
+      Supported,  FPU
+  NOT supported,  VME
+      Supported,  DE
+      Supported,  PSE
+      Supported,  TSC
+      Supported,  PAE
+      Supported,  MCE
+      Supported,  CX8
+      Supported,  SEP
+  NOT supported,  MTRR
+      Supported,  PGE
+  NOT supported,  MCA
+      Supported,  CMOV
+      Supported,  PAT
+  NOT supported,  PSE36
+  NOT supported,  PSN
+  NOT supported,  CLF
+  NOT supported,  DTES
+  NOT supported,  ACPI
+      Supported,  MMX
+      Supported,  FXSR
+      Supported,  SSE
+      Supported,  SSE2
+  NOT supported,  SS
+  NOT supported,  HTT
+  NOT supported,  TM1
+  NOT supported,  IA-64
+  NOT supported,  PBE
+
+CPU controllers:
+  APIC: base FEE00900, ID 0
+    Physical ID                              Offset 0x020/32, raw data: 00000000
+      APIC ID                                  00000000 (0)
+    Version                                  Offset 0x030/48, raw data: 00050014
+      Version                                  00000014 (20)
+      Reserved                                 00000000 (0)
+      Lvt Count                                00000005 (5)
+      Reserved                                 00000000 (0)
+      Reserved                                 00050014 (327700)
+      Reserved                                 00050014 (327700)
+      Reserved                                 00050014 (327700)
+    TPR (Task Priority Register)             Offset 0x080/128, raw data: 00000000
+      Priority                                 00000000 (0)
+    APR (Arbitration priority register)      Offset 0x090/144, raw data: 00000000
+      Priority                                 00000000 (0)
+    PPR (Processor Priority Register)        Offset 0x0A0/160, raw data: 00000000
+      Priority                                 00000000 (0)
+    EOI (End of Interrupt Register)          Offset 0x0B0/176, raw data: 00000000
+      EOI                                      00000000 (0)
+    LDR (Logical Destination Register)       Offset 0x0D0/208, raw data: 00000000
+      Logical Dest                             00000000 (0)
+    DFR (Destination Format Register)        Offset 0x0E0/224, raw data: FFFFFFFF
+      Model                                    0000000F (15)
+    SVR (Spurious Vector Register)           Offset 0x0F0/240, raw data: 000001FF
+      Spurious Vector                          000000FF (255)
+      APIC Enabled                             00000001 (1)
+      CPU                                      00000000 (0)
+      Reserved                                 00000000 (0)
+      Reserved                                 000001FF (511)
+      Reserved                                 000001FF (511)
+      Reserved                                 000001FF (511)
+    ISR (In-service Register)                Offset 0x100/256, raw data: 00000000
+      [0] bitfield                             00000000 (0)
+      [1] bitfield                             00000000 (0)
+      [2] bitfield                             00000000 (0)
+      [3] bitfield                             00000000 (0)
+      [4] bitfield                             00000000 (0)
+      [5] bitfield                             00000000 (0)
+      [6] bitfield                             00000000 (0)
+      [7] bitfield                             00000000 (0)
+    TMR (Trigger Mode Register)              Offset 0x180/384, raw data: 00000000
+      [0] bitfield                             00000000 (0)
+      [1] bitfield                             00000000 (0)
+      [2] bitfield                             00000000 (0)
+      [3] bitfield                             00000000 (0)
+      [4] bitfield                             00000000 (0)
+      [5] bitfield                             00000000 (0)
+      [6] bitfield                             00000000 (0)
+      [7] bitfield                             00000000 (0)
+    IRR (Interrupt Request Register)         Offset 0x200/512, raw data: 00000000
+      [0] bitfield                             00000000 (0)
+      [1] bitfield                             00000000 (0)
+      [2] bitfield                             00000000 (0)
+      [3] bitfield                             00000000 (0)
+      [4] bitfield                             00000000 (0)
+      [5] bitfield                             00000000 (0)
+      [6] bitfield                             00000000 (0)
+      [7] bitfield                             00000000 (0)
+    ESR (Error Status Register)              Offset 0x280/640, raw data: 00000000
+      Send                                     00000000 (0)
+      Receive                                  00000000 (0)
+      Send Accept                              00000000 (0)
+      Receive Accept                           00000000 (0)
+      Send Illegal                             00000000 (0)
+      Receive Illegal Vector                   00000000 (0)
+      Illegal Reg Address                      00000000 (0)
+      Errors                                   00000000 (0)
+    ICR1 (Interrupt Command Register)        Offset 0x300/768, raw data: 000C4610
+      Int Vector                               00000010 (16)
+      Delivery Mode                            00000006 (6)
+      Destination Mode                         00000000 (0)
+      Delivery Status                          00000000 (0)
+      Reserved                                 00000000 (0)
+      Level                                    00000001 (1)
+      Trigger                                  00000000 (0)
+      Reserved                                 00000000 (0)
+      Shorthand                                00000003 (3)
+      Reserved                                 00000000 (0)
+    ICR2 (Interrupt Command Register)        Offset 0x310/784, raw data: 00000000
+      destination                              00000000 (0)
+    Level Trigger Timer                      Offset 0x320/800, raw data: 00010000
+      Int Vector                               00000000 (0)
+      Delivery Status                          00000000 (0)
+      Mask                                     00000001 (1)
+      Timer Mode                               00000000 (0)
+    Level Trigger Thermal                    Offset 0x330/816, raw data: 00010000
+      Int Vector                               00000000 (0)
+      Delivery Mode                            00000000 (0)
+      Delivery Status                          00000000 (0)
+      Mask                                     00000001 (1)
+    Level Trigger PC                         Offset 0x340/832, raw data: 00010000
+      Interrupt Vector                         00000000 (0)
+      Delivery Mode                            00000000 (0)
+      Delivery Status                          00000000 (0)
+    Level Trigger LINT0                      Offset 0x350/848, raw data: 00008700
+      Interrupt Vector                         00000000 (0)
+      Delivery Mode (ExtInt)                   00000007 (7)
+      Reserved                                 00000000 (0)
+      Delivery Status                          00000000 (0)
+      Polarity                                 00000000 (0)
+      Remote IRR                               00000000 (0)
+      Trigger (Level)                          00000001 (1)
+      Mask                                     00000000 (0)
+      Reserved                                 00000000 (0)
+    Level Trigger LINT1                      Offset 0x360/864, raw data: 00008400
+      Interrupt Vector                         00000000 (0)
+      Delivery Mode (NMI)                      00000004 (4)
+      Reserved                                 00000000 (0)
+      Delivery Status                          00000000 (0)
+      polarity                                 00000000 (0)
+      Remote IRR                               00000000 (0)
+      Trigger (Level)                          00000001 (1)
+      Mask                                     00000000 (0)
+      Reserved                                 00000000 (0)
+    Level Trigger Error                      Offset 0x370/880, raw data: 00010000
+      Interrupt Vector                         00000000 (0)
+      Delivery Status                          00000000 (0)
+      Mask                                     00000001 (1)
+    Timer ICR (Interrupt Command Register)   Offset 0x380/896, raw data: 00000000
+      Initial count                            00000000 (0)
+    Timer CCR (Current Count Register)       Offset 0x390/912, raw data: 00000000
+      Current Count                            00000000 (0)
+    Timer DCR (Divide Config Register)       Offset 0x3E0/992, raw data: 00000000
+      Divisor                                  00000000 (0)
+
+Total physical DRAM 1046905K bytes
+
+Router2#
