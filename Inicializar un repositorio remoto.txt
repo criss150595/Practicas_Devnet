@@ -8,3 +8,9 @@ git commit -m "Descripcion commit"
 git remote add origin https://github.com/criss150595/Practicas_Devnet.git
 # realizar el git push
 git push -u origin master
+
+Una vez se realiza el paso anterior y colocamos nuestro repositorio en github
+y cuando añadamos un nuevo file o realizemos un cambio y queramos actualizar el repositorio remoto
+se debe utilizar solamente el ultimo comando, obviamente sin olvidar realizar los pasos de add, commit
+# realizar el git push
+git push -u origin master
