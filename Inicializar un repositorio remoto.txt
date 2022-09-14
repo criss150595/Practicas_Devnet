@@ -16,3 +16,7 @@ y cuando añadamos un nuevo file o realizemos un cambio y queramos actualizar el
 se debe utilizar solamente el ultimo comando, obviamente sin olvidar realizar los pasos de add, commit
 # realizar el git push
 git push -u origin master
+
+
+###
+Prueba diff
