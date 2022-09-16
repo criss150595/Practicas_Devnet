@@ -1,0 +1,2940 @@
+C
+C
+*********************************************************************************
+*ADVERTENCIA: EL INGRESO A ESTE  SISTEMA ESTA PERMITIDO UNICAMENTE  A  USUARIOS *
+*             AUTORIZADOS POR RAZONES DE SEGURIDAD, TODO INGRESO                *
+*             ES REGISTRADO.  SI UD. NO  ES UN USUARIO AUTORIZADO, DESCONECTESE *
+*             DE INMEDIATO, DE LO CONTRARIO, SERA PASIBLE A SANSIONES DE LEY.   *
+*********************************************************************************
+!
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>terminal width 511
+CBB-MEL3-920-MAFUME-01>terminal length 0
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show environment summary
+
+Number of Critical alarms:  0
+Number of Major alarms:     0
+Number of Minor alarms:     0
+
+ Slot        Sensor          Current State   Reading        Threshold(Minor,Major,Critical,Shutdown)
+ ----------  --------------  --------------- ------------   ---------------------------------------
+ P0          PEM Iout        Normal          3    A      	na
+ P0          PEM Vout        Normal          13   V DC   	na
+ P0          PEM Vin         Normal          54   V DC   	na
+ P0          PEM Pin         Normal          38   Watts  	na
+ P0          Temp: Temp 3    Normal          46   Celsius	(90 ,95 ,100,105)(Celsius)
+ P0          Temp: Temp 2    Normal          43   Celsius	(100,105,110,115)(Celsius)
+ P1          PEM Iout        Normal          2    A      	na
+ P1          PEM Vout        Normal          13   V DC   	na
+ P1          PEM Vin         Normal          51   V DC   	na
+ P1          PEM Pin         Normal          37   Watts  	na
+ P1          Temp: Temp 3    Normal          48   Celsius	(90 ,95 ,100,105)(Celsius)
+ P1          Temp: Temp 2    Normal          44   Celsius	(100,105,110,115)(Celsius)
+ P2          Temp: FC PWM    Fan Speed 56%   46   Celsius	na
+ R0          VADM1: VX1      Normal          995  mV     	na
+ R0          VADM1: VX2      Normal          1049 mV     	na
+ R0          VADM1: VX3      Normal          998  mV     	na
+ R0          VADM1: VP1      Normal          3288 mV     	na
+ R0          VADM1: VP2      Normal          1794 mV     	na
+ R0          VADM1: VP3      Normal          1197 mV     	na
+ R0          VADM1: VP4      Normal          1766 mV     	na
+ R0          VADM1: VH       Normal          12469mV     	na
+ R0          VADM1: AUX1     Normal          4929 mV     	na
+ R0          VADM1: AUX2     Normal          6937 mV     	na
+ R0          Temp: CYLON     Normal          84   Celsius	(100,105,110,112)(Celsius)
+ R0          Temp: BOARD     Normal          54   Celsius	(85 ,90 ,93 ,95 )(Celsius)
+ R0          Temp: Outlet    Normal          51   Celsius	(80 ,85 ,90 ,92 )(Celsius)
+ R0          Temp: CPU       Normal          74   Celsius	(105,110,115,120)(Celsius)
+ R0          VADM2: VX1      Normal          1000 mV     	na
+ R0          VADM2: VX2      Normal          1007 mV     	na
+ R0          VADM2: VX3      Normal          754  mV     	na
+ R0          VADM2: VP1      Normal          2501 mV     	na
+ R0          VADM2: VP2      Normal          1497 mV     	na
+ R0          VADM2: VP3      Normal          1498 mV     	na
+ R0          VADM2: VH       Normal          12469mV     	na
+ R0          Temp: Inlet     Normal          45   Celsius	(75 ,77 ,80 ,82 )(Celsius)
+
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show cdp neighbor
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+CBB-MEL3-920-TERMINAL-01.entel.bo
+                 Ten 0/0/26        179              R I   ASR-920-2 Ten 0/0/25
+
+Total cdp entries displayed : 1
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show cdp neighbor detail
+-------------------------
+Device ID: CBB-MEL3-920-TERMINAL-01.entel.bo
+Entry address(es): 
+  IP address: 10.130.117.242
+Platform: cisco ASR-920-24SZ-M,  Capabilities: Router IGMP 
+Interface: TenGigabitEthernet0/0/26,  Port ID (outgoing port): TenGigabitEthernet0/0/25
+Holdtime : 179 sec
+
+Version :
+Cisco IOS Software [Fuji], ASR920 Software (PPC_LINUX_IOSD-UNIVERSALK9_NPE-M), Version 16.9.3, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2019 by Cisco Systems, Inc.
+Compiled Wed 20-Mar-19 06:36 by mcpre
+
+advertisement version: 2
+Management address(es): 
+  IP address: 10.130.117.242
+
+
+Total cdp entries displayed : 1
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show interface description
+Interface                      Status         Protocol Description
+Gi0/0/0                        up             up       ### CONN RBS EstebanArce ###
+Gi0/0/1                        admin down     down     
+Gi0/0/2                        admin down     down     
+Gi0/0/3                        admin down     down     
+Gi0/0/4                        admin down     down     
+Gi0/0/5                        admin down     down     
+Gi0/0/6                        admin down     down     
+Gi0/0/7                        admin down     down     
+Gi0/0/8                        admin down     down     
+Gi0/0/9                        admin down     down     
+Gi0/0/10                       admin down     down     
+Gi0/0/11                       admin down     down     
+Gi0/0/12                       admin down     down     
+Gi0/0/13                       admin down     down     
+Gi0/0/14                       admin down     down     
+Gi0/0/15                       admin down     down     
+Gi0/0/16                       admin down     down     
+Gi0/0/17                       admin down     down     
+Gi0/0/18                       admin down     down     
+Gi0/0/19                       admin down     down     
+Gi0/0/20                       admin down     down     
+Gi0/0/21                       admin down     down     
+Gi0/0/22                       admin down     down     
+Gi0/0/23                       admin down     down     
+Te0/0/24                       admin down     down     
+Te0/0/25                       admin down     down     
+Te0/0/26                       up             up       ### ENLACE HACIA MEL-920-TERMINAL-01  Ten 0/0/25 ###
+Te0/0/27                       admin down     down     
+Gi0                            down           down     
+BD2500                         up             up       ### CONN COTX EstebanArce - OYM ###
+BD2501                         up             up       ### BTS:H:EstebanArce ###
+BD2502                         up             up       ### NB:H:EstebanArce ###
+BD2503                         up             up       ### eNB:H:EstebanArce - Senalizacion BDI ###
+BD2504                         up             up       ### eNB:H:EstebanArce - Trafico BDI ###
+Lo0                            up             up       ### CBB-MEL3-920-MEFUME-01-LOOPBACK 0 ### 
+Vi4001                         down           down     
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show inventory
+NAME: "Chassis", DESCR: "Cisco ASR920 Series - 24GE Fiber and 4-10GE - Modular PSU"
+PID: ASR-920-24SZ-M    , VID: V01  , SN: CAT2233V1K1
+
+NAME: "subslot 0/0 transceiver 0", DESCR: "GE LX"
+PID: GLC-LH-SMD          , VID: A    , SN: FNS19160PEC     
+
+NAME: "subslot 0/0 transceiver 26", DESCR: "SFP+ 10GBASE-LR"
+PID: SFP-10G-LR          , VID: A    , SN: FNS20380A1A     
+
+NAME: "Power Supply Module 0", DESCR: "ASR 920 250W DC Power Supply"
+PID: ASR-920-PWR-D     , VID: V01  , SN: ART2225FGYL
+
+NAME: "Power Supply Module 1", DESCR: "ASR 920 250W DC Power Supply"
+PID: ASR-920-PWR-D     , VID: V01  , SN: ART2225FGYS
+
+NAME: "Fan Tray", DESCR: "ASR 920 Fan tray"
+PID: ASR-920-FAN-F     , VID: V01  , SN: CAT2233V13A
+
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show version
+Cisco IOS XE Software, Version 16.09.03
+Cisco IOS Software [Fuji], ASR920 Software (PPC_LINUX_IOSD-UNIVERSALK9_NPE-M), Version 16.9.3, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2019 by Cisco Systems, Inc.
+Compiled Wed 20-Mar-19 06:36 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2019 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+CBB-MEL3-920-MAFUME-01 uptime is 9 weeks, 4 days, 53 minutes
+Uptime for this control processor is 9 weeks, 4 days, 58 minutes
+System returned to ROM by reload at 15:39:48 BOL Thu Jul 7 2022
+System restarted at 15:32:53 BOL Mon Jul 11 2022
+System image file is "bootflash:asr920-universalk9_npe.16.09.03.SPA.bin"
+Last reload reason: PowerOn
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: advancedmetroipaccess
+License Type: Permanent
+Next reload license Level: advancedmetroipaccess
+
+
+Smart Licensing Status: Smart Licensing is DISABLED
+
+cisco ASR-920-24SZ-M (Freescale P2020) processor (revision 1.2 GHz) with 897246K/6147K bytes of memory.
+Processor board ID CAT2233V1K1
+24 Gigabit Ethernet interfaces
+4 Ten Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3670016K bytes of physical memory.
+1231647K bytes of eMMC flash at bootflash:.
+
+Configuration register is 0x2102
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>dir all
+                         ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show bootvar
+BOOT variable = asr920-universalk9_npe.16.09.03.SPA.bin,1;asr920-universalk9_npe.03.16.06b.S.155-3.S6b-ext.bin,1;
+CONFIG_FILE variable does not exist
+BOOTLDR variable does not exist
+Configuration register is 0x2102
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show running-config
+                             ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show run | include classe-map
+                             ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show run | include policy-map
+                             ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show logging
+                               ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show ntp config
+ ntp server 200.87.101.144
+ ntp server 200.87.101.146
+ ntp server 200.87.254.117 prefer
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show ip mroute
+IP Multicast Forwarding is not enabled.
+IP Multicast Routing Table
+Flags: D - Dense, S - Sparse, B - Bidir Group, s - SSM Group, C - Connected,
+       L - Local, P - Pruned, R - RP-bit set, F - Register flag,
+       T - SPT-bit set, J - Join SPT, M - MSDP created entry, E - Extranet,
+       X - Proxy Join Timer Running, A - Candidate for MSDP Advertisement,
+       U - URD, I - Received Source Specific Host Report, 
+       Z - Multicast Tunnel, z - MDT-data group sender, 
+       Y - Joined MDT-data group, y - Sending to MDT-data group, 
+       G - Received BGP C-Mroute, g - Sent BGP C-Mroute, 
+       N - Received BGP Shared-Tree Prune, n - BGP C-Mroute suppressed, 
+       Q - Received BGP S-A Route, q - Sent BGP S-A Route, 
+       V - RD & Vector, v - Vector, p - PIM Joins on route, 
+       x - VxLAN group, c - PFP-SA cache created entry
+Outgoing interface flags: H - Hardware switched, A - Assert winner, p - PIM Join
+ Timers: Uptime/Expires
+ Interface state: Interface, Next-Hop or VCD, State/Mode
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show running | i  username
+                             ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0/0   unassigned      YES NVRAM  up                    up      
+GigabitEthernet0/0/1   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/2   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/3   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/4   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/5   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/6   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/7   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/8   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/9   unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/10  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/11  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/12  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/13  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/14  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/15  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/16  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/17  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/18  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/19  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/20  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/21  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/22  unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/0/23  unassigned      YES NVRAM  administratively down down    
+Te0/0/24               unassigned      YES NVRAM  administratively down down    
+Te0/0/25               unassigned      YES NVRAM  administratively down down    
+Te0/0/26               10.130.117.243  YES NVRAM  up                    up      
+Te0/0/27               unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0       unassigned      YES NVRAM  down                  down    
+BDI2500                10.224.9.181    YES manual up                    up      
+BDI2501                10.224.11.181   YES manual up                    up      
+BDI2502                10.40.194.189   YES manual up                    up      
+BDI2503                10.224.14.181   YES manual up                    up      
+BDI2504                10.224.15.181   YES manual up                    up      
+Loopback0              181.115.255.238 YES NVRAM  up                    up      
+Virtual-PPP4001        unassigned      YES unset  down                  down    
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>show running-config interface loopback 0
+                             ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+181.115.255.237   0   FULL/  -        00:00:38    10.130.117.242  TenGigabitEthernet0/0/26
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show ip bgp summary
+BGP router identifier 181.115.255.238, local AS number 6568
+BGP table version is 185206, main routing table version 185206
+1714 network entries using 246816 bytes of memory
+3426 path entries using 301488 bytes of memory
+76/76 BGP path/bestpath attribute entries using 12768 bytes of memory
+3193 BGP rrinfo entries using 116136 bytes of memory
+10 BGP AS-PATH entries using 240 bytes of memory
+3 BGP community entries using 72 bytes of memory
+37 BGP extended community entries using 3894 bytes of memory
+3 BGP route-map cache entries using 108 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 681522 total bytes of memory
+BGP activity 284493/272974 prefixes, 925747/902718 paths, scan interval 60 secs
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+190.129.254.117 4         6568 7719112  116963   185206    0    0 9w3d         1713
+190.129.254.118 4         6568 7499008  116945   185206    0    0 9w3d         1712
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show run | include mpls
+                             ^
+% Invalid input detected at '^' marker.
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show mpls ldp neighbor | in Peer
+    Peer LDP Ident: 181.115.255.237:0; Local LDP Ident 181.115.255.238:0
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is 190.129.254.117 to network 0.0.0.0
+
+B*    0.0.0.0/0 [200/0] via 190.129.254.117, 7w0d
+      10.0.0.0/8 is variably subnetted, 229 subnets, 7 masks
+B        10.52.138.0/26 [200/0] via 190.129.254.117, 7w0d
+B        10.52.139.0/26 [200/0] via 190.129.254.117, 3w1d
+B        10.52.140.0/29 [200/0] via 190.129.254.117, 7w0d
+B        10.52.154.0/28 [200/0] via 190.129.254.117, 7w0d
+O        10.52.240.34/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.36/31 
+           [110/1300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.38/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.52.240.46/31 [200/0] via 190.129.254.117, 2w1d
+O        10.52.240.76/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.82/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.84/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.86/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.88/31 
+           [110/2500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.90/31 
+           [110/2510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.92/31 
+           [110/1510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.94/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.106/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.110/31 
+           [110/1300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.118/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.120/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.52.240.126/31 [200/0] via 190.129.254.117, 7w0d
+B        10.52.240.128/31 [200/0] via 190.129.254.117, 7w0d
+B        10.52.240.132/30 [200/0] via 190.129.254.117, 7w0d
+B        10.52.240.136/30 [200/0] via 190.129.254.117, 7w0d
+O        10.52.240.156/31 
+           [110/2510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.52.240.164/31 [200/0] via 190.129.254.117, 2w1d
+B        10.52.240.166/31 [200/0] via 190.129.254.117, 2w1d
+B        10.52.240.168/31 [200/0] via 190.129.254.117, 2w1d
+B        10.52.240.174/31 [200/0] via 190.129.254.117, 2w1d
+B        10.52.240.176/31 [200/0] via 190.129.254.117, 2w1d
+O        10.52.240.204/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.206/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.210/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.212/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.218/31 
+           [110/1510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.240.224/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.241.0/31 
+           [110/510] via 10.130.117.242, 1w0d, TenGigabitEthernet0/0/26
+B        10.52.241.10/31 [200/0] via 190.129.254.117, 2w1d
+O        10.52.241.34/31 
+           [110/3500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.241.36/31 
+           [110/2510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.241.38/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.241.48/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.241.248/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.241.250/31 
+           [110/2200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.52.241.254/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.57.236.0/26 [200/0] via 190.129.254.117, 7w0d
+B        10.57.236.64/27 [200/0] via 190.129.254.117, 7w0d
+B        10.57.236.128/26 [200/0] via 190.129.254.117, 7w0d
+B        10.57.236.192/27 [200/0] via 190.129.254.117, 7w0d
+O        10.129.8.12/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.130.16.1/32 [200/0] via 190.129.254.117, 7w0d
+B        10.130.16.2/32 [200/0] via 190.129.254.117, 7w0d
+O        10.130.69.102/31 
+           [110/1310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.130.69.110/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.130.69.152/31 
+           [110/1200] via 10.130.117.242, 1d16h, TenGigabitEthernet0/0/26
+O        10.130.116.118/31 
+           [110/1310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.130.117.216/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.130.117.236/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.130.117.240/31 
+           [110/200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+C        10.130.117.242/31 is directly connected, TenGigabitEthernet0/0/26
+L        10.130.117.243/32 is directly connected, TenGigabitEthernet0/0/26
+B        10.130.120.0/28 [200/0] via 190.129.254.117, 7w0d
+B        10.139.56.28/31 [200/0] via 190.129.254.117, 2w1d
+B        10.139.56.30/31 [200/0] via 190.129.254.117, 7w0d
+B        10.139.56.54/31 [200/0] via 190.129.254.117, 2w1d
+B        10.139.56.60/31 [200/0] via 190.129.254.117, 4d05h
+B        10.139.56.62/31 [200/0] via 190.129.254.117, 4d05h
+O        10.139.56.94/31 
+           [110/2400] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        10.139.56.96/31 
+           [110/3400] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        10.139.56.98/31 
+           [110/1200] via 10.130.117.242, 3d16h, TenGigabitEthernet0/0/26
+O        10.139.56.100/31 
+           [110/5200] via 10.130.117.242, 3d16h, TenGigabitEthernet0/0/26
+O        10.139.56.102/31 
+           [110/3310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.104/31 
+           [110/3200] via 10.130.117.242, 1d16h, TenGigabitEthernet0/0/26
+O        10.139.56.106/31 
+           [110/3210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.108/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.112/31 
+           [110/3200] via 10.130.117.242, 3d16h, TenGigabitEthernet0/0/26
+O        10.139.56.114/31 
+           [110/5200] via 10.130.117.242, 1d16h, TenGigabitEthernet0/0/26
+B        10.139.56.134/31 [200/0] via 190.129.254.117, 4d05h
+B        10.139.56.136/31 [200/0] via 190.129.254.117, 4d05h
+O        10.139.56.162/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.164/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.166/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.168/31 
+           [110/2500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.170/31 
+           [110/2210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.56.174/31 
+           [110/2200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.139.56.254/31 [200/0] via 190.129.254.117, 2w1d
+B        10.139.57.0/31 [200/0] via 190.129.254.117, 2w1d
+O        10.139.57.2/31 
+           [110/3210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.57.4/31 
+           [110/6210] via 10.130.117.242, 17:58:05, TenGigabitEthernet0/0/26
+B        10.139.57.18/31 [200/0] via 190.129.254.117, 04:43:34
+B        10.139.57.20/31 [200/0] via 190.129.254.117, 04:43:34
+O        10.139.57.34/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.139.57.52/31 [200/0] via 190.129.254.117, 4d10h
+O        10.139.57.180/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.57.182/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.139.57.254/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.16.50/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.16.54/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.16.56/31 
+           [110/2210] via 10.130.117.242, 4d07h, TenGigabitEthernet0/0/26
+O        10.149.16.58/31 
+           [110/2200] via 10.130.117.242, 1w0d, TenGigabitEthernet0/0/26
+O        10.149.16.60/31 
+           [110/1200] via 10.130.117.242, 1w0d, TenGigabitEthernet0/0/26
+O        10.149.16.240/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.16.242/31 
+           [110/3210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.28.20/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.28.26/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.0/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.2/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.4/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.6/31 
+           [110/3200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.10/31 
+           [110/5200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.12/31 
+           [110/4210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.14/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.149.29.18/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.20/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.34/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.48/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.50/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.56/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.72/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.82/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.84/31 [200/0] via 190.129.254.117, 2w1d
+O        10.149.29.118/31 
+           [110/1500] via 10.130.117.242, 1w3d, TenGigabitEthernet0/0/26
+O        10.149.29.120/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.122/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.126/31 
+           [110/3210] via 10.130.117.242, 1d03h, TenGigabitEthernet0/0/26
+O        10.149.29.128/31 
+           [110/3200] via 10.130.117.242, 1d03h, TenGigabitEthernet0/0/26
+O        10.149.29.132/31 
+           [110/3400] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        10.149.29.138/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.172/31 
+           [110/5210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.174/31 
+           [110/1310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.176/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.178/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.182/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.184/31 
+           [110/1310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.204/31 
+           [110/410] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.208/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.210/31 
+           [110/1510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.29.230/31 
+           [110/2500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.149.29.246/31 [200/0] via 190.129.254.117, 2w1d
+B        10.149.29.248/31 [200/0] via 190.129.254.117, 2w1d
+O        10.149.38.34/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.38.36/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.38.38/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.149.38.46/31 [200/0] via 190.129.254.117, 2w6d
+B        10.149.38.48/31 [200/0] via 190.129.254.117, 2w6d
+O        10.149.38.234/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.38.236/31 
+           [110/3200] via 10.130.117.242, 22:18:02, TenGigabitEthernet0/0/26
+B        10.149.39.36/31 [200/0] via 190.129.254.117, 2w1d
+O        10.149.39.52/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.149.39.128/31 [200/0] via 190.129.254.117, 2w1d
+O        10.149.39.150/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.39.154/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.39.210/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.39.220/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.149.39.230/31 [200/0] via 190.129.254.117, 1w0d
+O        10.149.40.56/31 
+           [110/1200] via 10.130.117.242, 6d16h, TenGigabitEthernet0/0/26
+O        10.149.40.58/31 
+           [110/2200] via 10.130.117.242, 2d21h, TenGigabitEthernet0/0/26
+B        10.149.40.86/31 [200/0] via 190.129.254.117, 4d10h
+O        10.149.40.198/31 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.40.232/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.40.244/31 
+           [110/3200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.40.246/31 
+           [110/2200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.149.40.248/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.86/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.124/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.128/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.134/31 
+           [110/1400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.168/31 
+           [110/1400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.170/31 
+           [110/1300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.218/31 
+           [110/1300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.80.220/31 
+           [110/2210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.14/31 
+           [110/1300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.16/31 
+           [110/1310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.28/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.30/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.32/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.40/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.42/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.186/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.188/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.190/31 
+           [110/2200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.192/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.250/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.252/31 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.81.254/31 
+           [110/2510] via 10.130.117.242, 1w0d, TenGigabitEthernet0/0/26
+O        10.198.82.0/31 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.2/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.4/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.6/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.80/31 
+           [110/200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.82/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.84/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.86/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.88/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.90/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.92/31 
+           [110/410] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.94/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.96/31 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        10.198.82.152/31 [200/0] via 190.129.254.117, 2w1d
+B        10.198.82.154/31 [200/0] via 190.129.254.117, 2w1d
+B        10.198.82.158/31 [200/0] via 190.129.254.117, 2w1d
+O        10.198.82.160/31 
+           [110/1300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.162/31 
+           [110/2300] via 10.130.117.242, 2w1d, TenGigabitEthernet0/0/26
+B        10.198.82.190/31 [200/0] via 190.129.254.117, 2w1d
+B        10.198.82.194/31 [200/0] via 190.129.254.117, 2w1d
+B        10.198.82.196/31 [200/0] via 190.129.254.117, 2w1d
+O        10.198.82.220/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.222/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.224/31 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.226/31 
+           [110/410] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.228/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.250/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.252/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.82.254/31 
+           [110/400] via 10.130.117.242, 3d14h, TenGigabitEthernet0/0/26
+O        10.198.83.90/31 
+           [110/210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.136/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.140/31 
+           [110/410] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.142/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.184/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.186/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.188/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.190/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.192/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.194/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.196/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.198.83.198/31 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.240.80.196/31 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        10.240.80.246/31 
+           [110/400] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        10.240.82.192/31 
+           [110/400] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+      168.205.0.0/16 is variably subnetted, 2 subnets, 2 masks
+B        168.205.96.0/22 [200/0] via 190.129.254.117, 6d18h
+B        168.205.99.0/25 [200/0] via 190.129.254.117, 7w0d
+      181.115.0.0/16 is variably subnetted, 1139 subnets, 5 masks
+B        181.115.128.0/17 [200/0] via 190.129.254.117, 6d18h
+B        181.115.128.0/20 [200/0] via 190.129.254.117, 6d18h
+B        181.115.138.0/23 [200/0] via 190.129.254.117, 7w0d
+B        181.115.140.0/24 [200/0] via 190.129.254.117, 7w0d
+B        181.115.147.0/24 [200/0] via 190.129.254.117, 7w0d
+B        181.115.156.0/24 [200/0] via 190.129.254.117, 7w0d
+B        181.115.160.0/20 [200/0] via 190.129.254.117, 6d18h
+B        181.115.176.0/20 [200/0] via 190.129.254.117, 6d18h
+B        181.115.192.0/20 [200/0] via 190.129.254.117, 6d18h
+B        181.115.208.0/20 [200/0] via 190.129.254.117, 6d18h
+B        181.115.213.0/24 [200/0] via 190.129.254.117, 7w0d
+B        181.115.224.0/20 [200/0] via 190.129.254.117, 6d18h
+B        181.115.240.0/20 [200/0] via 190.129.254.117, 6d18h
+B        181.115.249.0/24 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.1/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.2/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.3/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.5/32 [200/0] via 190.129.254.117, 5w0d
+B        181.115.250.7/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.8/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.9/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.250.11/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.12/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.13/32 [200/0] via 190.129.254.117, 1w1d
+O        181.115.250.15/32 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.16/32 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.18/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.19/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.20/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.250.21/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.22/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.250.23/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.24/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.26/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.28/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.30/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.250.32/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.250.35/32 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.36/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.250.37/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.250.38/32 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.39/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.40/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.41/32 
+           [110/1510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.42/32 
+           [110/2500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.43/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.44/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.45/32 [200/0] via 190.129.254.117, 6w4d
+B        181.115.250.46/32 [200/0] via 190.129.254.117, 4w0d
+B        181.115.250.47/32 [200/0] via 190.129.254.117, 2w2d
+O        181.115.250.48/32 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.49/32 [200/0] via 190.129.254.117, 5w3d
+O        181.115.250.50/32 
+           [110/1300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.52/32 [200/0] via 190.129.254.117, 1w3d
+O        181.115.250.54/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.55/32 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.56/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.250.57/32 
+           [110/2510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.58/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.59/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.60/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.61/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.62/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.63/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.64/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.65/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.66/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.67/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.68/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.250.69/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.250.70/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.71/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.72/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.73/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.74/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.75/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.76/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.77/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.250.78/32 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.79/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.80/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.82/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.83/32 [200/0] via 190.129.254.117, 2d23h
+B        181.115.250.84/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.85/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.86/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.87/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.88/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.89/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.90/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.250.92/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.93/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.95/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.96/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.99/32 
+           [110/1510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.102/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.103/32 
+           [110/1310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.108/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.112/32 [200/0] via 190.129.254.117, 3w2d
+B        181.115.250.117/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.250.118/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.119/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.120/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.121/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.122/32 [200/0] via 190.129.254.117, 3d01h
+B        181.115.250.123/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.124/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.125/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.126/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.250.131/32 
+           [110/3500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.132/32 
+           [110/2510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.250.133/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.134/32 [200/0] via 190.129.254.117, 3d22h
+B        181.115.250.136/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.250.137/32 [200/0] via 190.129.254.117, 5w3d
+O        181.115.250.138/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.140/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.250.143/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.144/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.145/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.250.146/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.147/32 [200/0] via 190.129.254.117, 6w0d
+B        181.115.250.148/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.250.149/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.250.150/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.250.151/32 [200/0] via 190.129.254.117, 4w6d
+B        181.115.250.152/32 [200/0] via 190.129.254.117, 6d08h
+B        181.115.250.153/32 [200/0] via 190.129.254.117, 6w5d
+B        181.115.250.154/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.155/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.250.156/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.250.157/32 [200/0] via 190.129.254.117, 3d23h
+B        181.115.250.158/32 [200/0] via 190.129.254.117, 3w2d
+B        181.115.250.159/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.160/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.161/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.163/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.164/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.165/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.168/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.170/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.171/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.250.172/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.173/32 [200/0] via 190.129.254.117, 00:51:59
+B        181.115.250.174/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.175/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.177/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.178/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.179/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.250.180/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.182/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.183/32 [200/0] via 190.129.254.117, 6w0d
+B        181.115.250.184/32 [200/0] via 190.129.254.117, 3w0d
+B        181.115.250.185/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.186/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.250.187/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.250.188/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.250.190/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.250.191/32 [200/0] via 190.129.254.117, 18:20:45
+B        181.115.250.192/32 [200/0] via 190.129.254.117, 18:20:43
+B        181.115.250.193/32 [200/0] via 190.129.254.117, 18:20:21
+B        181.115.250.194/32 [200/0] via 190.129.254.117, 18:20:43
+B        181.115.250.195/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.196/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.197/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.199/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.200/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.202/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.203/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.205/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.206/32 [200/0] via 190.129.254.117, 4w2d
+B        181.115.250.207/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.208/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.209/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.210/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.250.211/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.250.212/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.250.213/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.250.214/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.217/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.250.218/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.220/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.250.221/32 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.222/32 [200/0] via 190.129.254.117, 2w6d
+O        181.115.250.223/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.250.224/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.225/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.250.226/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.250.227/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.251.0/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.251.2/32 [200/0] via 190.129.254.117, 2d00h
+B        181.115.251.3/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.4/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.5/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.6/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.251.7/32 
+           [110/3200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.251.8/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.9/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.10/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.251.11/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.12/32 [200/0] via 190.129.254.117, 3d16h
+B        181.115.251.13/32 [200/0] via 190.129.254.117, 1d22h
+B        181.115.251.14/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.15/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.16/32 [200/0] via 190.129.254.117, 00:51:55
+B        181.115.251.17/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.251.20/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.21/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.22/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.23/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.24/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.251.25/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.251.26/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.251.27/32 
+           [110/300] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        181.115.251.28/32 
+           [110/400] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        181.115.251.29/32 
+           [110/2400] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        181.115.251.30/32 
+           [110/1200] via 10.130.117.242, 3d16h, TenGigabitEthernet0/0/26
+O        181.115.251.31/32 
+           [110/3200] via 10.130.117.242, 3d16h, TenGigabitEthernet0/0/26
+O        181.115.251.32/32 
+           [110/3310] via 10.130.117.242, 1d01h, TenGigabitEthernet0/0/26
+O        181.115.251.33/32 
+           [110/3200] via 10.130.117.242, 1d16h, TenGigabitEthernet0/0/26
+O        181.115.251.34/32 
+           [110/3210] via 10.130.117.242, 18:09:31, TenGigabitEthernet0/0/26
+O        181.115.251.35/32 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.251.36/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.41/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.47/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.251.48/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.251.49/32 [200/0] via 190.129.254.117, 3d17h
+B        181.115.251.50/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.251.51/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.52/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.53/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.54/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.55/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.56/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.57/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.58/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.251.59/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.60/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.251.61/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.251.62/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.63/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.64/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.65/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.66/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.67/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.69/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.70/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.71/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.72/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.73/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.76/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.77/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.78/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.79/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.80/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.81/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.82/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.83/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.86/32 [200/0] via 190.129.254.117, 4w5d
+B        181.115.251.87/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.251.88/32 
+           [110/300] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.251.89/32 
+           [110/310] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.251.90/32 
+           [110/2500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.251.91/32 
+           [110/2210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.251.92/32 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.251.98/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.99/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.102/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.251.105/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.106/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.107/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.110/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.112/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.113/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.251.115/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.116/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.251.117/32 
+           [110/3210] via 10.130.117.242, 17:58:05, TenGigabitEthernet0/0/26
+O        181.115.251.118/32 
+           [110/6210] via 10.130.117.242, 17:58:05, TenGigabitEthernet0/0/26
+B        181.115.251.124/32 [200/0] via 190.129.254.117, 04:43:46
+B        181.115.251.125/32 [200/0] via 190.129.254.117, 04:43:34
+B        181.115.251.126/32 [200/0] via 190.129.254.117, 04:43:41
+B        181.115.251.129/32 [200/0] via 190.129.254.117, 04:43:59
+B        181.115.251.130/32 [200/0] via 190.129.254.117, 04:43:57
+O        181.115.251.132/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.251.137/32 [200/0] via 190.129.254.117, 4d10h
+B        181.115.251.138/32 [200/0] via 190.129.254.117, 4d10h
+B        181.115.251.139/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.141/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.251.142/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.251.143/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.251.146/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.251.148/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.251.149/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.251.150/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.251.151/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.251.152/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.251.154/32 [200/0] via 190.129.254.117, 12:15:08
+B        181.115.251.155/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.156/32 [200/0] via 190.129.254.117, 04:44:00
+B        181.115.251.157/32 [200/0] via 190.129.254.117, 04:44:02
+B        181.115.251.158/32 [200/0] via 190.129.254.117, 04:43:40
+B        181.115.251.159/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.251.161/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.251.162/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.163/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.166/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.251.169/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.170/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.171/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.172/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.173/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.174/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.175/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.176/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.177/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.178/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.179/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.180/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.251.181/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.251.182/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.251.183/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.251.184/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.251.186/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.187/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.251.188/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.251.189/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.251.190/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.251.191/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.192/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.193/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.194/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.195/32 [200/0] via 190.129.254.117, 02:48:42
+B        181.115.251.196/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.197/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.198/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.251.199/32 [200/0] via 190.129.254.117, 5w5d
+B        181.115.251.200/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.251.201/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.202/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.203/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.204/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.251.205/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.251.206/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.207/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.251.208/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.209/32 [200/0] via 190.129.254.117, 4w5d
+B        181.115.251.211/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.212/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.251.213/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.251.214/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.215/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.251.216/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.217/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.218/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.219/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.220/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.221/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.222/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.223/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.224/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.225/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.226/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.227/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.228/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.229/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.231/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.232/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.233/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.251.234/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.251.235/32 [200/0] via 190.129.254.117, 2d04h
+B        181.115.251.236/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.237/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.251.238/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.251.241/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.242/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.243/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.244/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.245/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.246/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.247/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.251.249/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.1/32 [200/0] via 190.129.254.117, 4d07h
+O        181.115.252.2/32 
+           [110/1211] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.5/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.6/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.252.7/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.252.8/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.11/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.252.15/32 [200/0] via 190.129.254.117, 5w0d
+B        181.115.252.16/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.20/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.22/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.23/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.252.25/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.26/32 [200/0] via 190.129.254.117, 4w5d
+B        181.115.252.27/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.252.29/32 [200/0] via 190.129.254.117, 02:22:31
+B        181.115.252.30/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.32/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.35/32 [200/0] via 190.129.254.117, 3w4d
+B        181.115.252.36/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.37/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.252.39/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.252.41/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.252.42/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.44/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.48/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.252.50/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.51/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.55/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.56/32 [200/0] via 190.129.254.117, 4w2d
+B        181.115.252.57/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.58/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.59/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.61/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.252.62/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.65/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.252.66/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.252.67/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.68/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.69/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.252.77/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.78/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.252.79/32 
+           [110/1211] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.80/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.81/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.82/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.83/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.252.84/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.85/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.252.86/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.252.87/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.88/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.252.89/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.252.90/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.252.91/32 [200/0] via 190.129.254.117, 6w4d
+B        181.115.252.92/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.252.93/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.252.94/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.252.95/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.96/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.97/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.98/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.252.100/32 [200/0] via 190.129.254.117, 5d03h
+B        181.115.252.101/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.252.103/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.104/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.106/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.252.108/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.252.111/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.112/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.113/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.116/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.117/32 [200/0] via 190.129.254.117, 6w1d
+B        181.115.252.119/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.121/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.252.122/32 [200/0] via 190.129.254.117, 5w5d
+B        181.115.252.125/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.252.127/32 
+           [110/1311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.129/32 
+           [110/1201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.131/32 
+           [110/1201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.133/32 [200/0] via 190.129.254.117, 5w5d
+B        181.115.252.134/32 [200/0] via 190.129.254.117, 04:44:02
+B        181.115.252.135/32 [200/0] via 190.129.254.117, 04:40:33
+B        181.115.252.136/32 [200/0] via 190.129.254.117, 05:39:32
+B        181.115.252.144/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.145/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.146/32 [200/0] via 190.129.254.117, 6d04h
+B        181.115.252.160/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.166/32 [200/0] via 190.129.254.117, 3w1d
+B        181.115.252.173/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.174/32 [200/0] via 190.129.254.117, 04:40:25
+B        181.115.252.176/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.179/32 [200/0] via 190.129.254.117, 6w3d
+B        181.115.252.180/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.181/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.182/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.183/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.184/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.252.186/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.252.187/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.188/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.252.189/32 
+           [110/4210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.190/32 
+           [110/5200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.191/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.252.192/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.193/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.194/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.195/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.196/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.197/32 [200/0] via 190.129.254.117, 1d08h
+B        181.115.252.198/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.252.199/32 [200/0] via 190.129.254.117, 5d23h
+B        181.115.252.201/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.252.202/32 [200/0] via 190.129.254.117, 2d00h
+B        181.115.252.203/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.252.204/32 
+           [110/1500] via 10.130.117.242, 1w3d, TenGigabitEthernet0/0/26
+O        181.115.252.205/32 
+           [110/500] via 10.130.117.242, 2w1d, TenGigabitEthernet0/0/26
+O        181.115.252.206/32 
+           [110/1200] via 10.130.117.242, 3d04h, TenGigabitEthernet0/0/26
+O        181.115.252.207/32 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.208/32 
+           [110/3200] via 10.130.117.242, 1d03h, TenGigabitEthernet0/0/26
+O        181.115.252.210/32 
+           [110/3400] via 10.130.117.242, 2w2d, TenGigabitEthernet0/0/26
+O        181.115.252.212/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.213/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.214/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.215/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.252.216/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.252.217/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.218/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.219/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.220/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.221/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.222/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.223/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.224/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.226/32 [200/0] via 190.129.254.117, 1d10h
+B        181.115.252.227/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.229/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.230/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.231/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.232/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.233/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.234/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.236/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.252.237/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.252.238/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.239/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.240/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.241/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.242/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.243/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.252.244/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.252.245/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.246/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.247/32 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.248/32 
+           [110/3200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.252.249/32 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.250/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.252.251/32 
+           [110/1210] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.252.252/32 [200/0] via 190.129.254.117, 4d03h
+B        181.115.252.253/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.252.254/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.253.0/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.253.3/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.5/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.6/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.8/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.10/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.11/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.12/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.13/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.14/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.253.15/32 
+           [110/510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.16/32 
+           [110/1510] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.19/32 [200/0] via 190.129.254.117, 3w1d
+B        181.115.253.20/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.253.21/32 [200/0] via 190.129.254.117, 3w4d
+B        181.115.253.24/32 [200/0] via 190.129.254.117, 2w3d
+B        181.115.253.25/32 [200/0] via 190.129.254.117, 4d10h
+B        181.115.253.26/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.253.27/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.253.28/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.253.30/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.31/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.34/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.253.35/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.46/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.47/32 [200/0] via 190.129.254.117, 4w6d
+B        181.115.253.48/32 [200/0] via 190.129.254.117, 3w3d
+O        181.115.253.50/32 
+           [110/1210] via 10.130.117.242, 1w5d, TenGigabitEthernet0/0/26
+O        181.115.253.51/32 
+           [110/1200] via 10.130.117.242, 22:18:02, TenGigabitEthernet0/0/26
+B        181.115.253.53/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.54/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.55/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.253.59/32 
+           [110/1401] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.60/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.64/32 
+           [110/1401] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.65/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.253.69/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.253.70/32 
+           [110/1301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.71/32 
+           [110/1301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.72/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.73/32 [200/0] via 190.129.254.117, 4w6d
+O        181.115.253.74/32 
+           [110/2211] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.78/32 [200/0] via 190.129.254.117, 4d05h
+B        181.115.253.79/32 [200/0] via 190.129.254.117, 2d21h
+B        181.115.253.81/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.82/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.84/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.85/32 [200/0] via 190.129.254.117, 7w0d
+O        181.115.253.86/32 
+           [110/401] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.87/32 
+           [110/401] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.89/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.90/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.91/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.94/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.97/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.98/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.253.99/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.104/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.105/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.253.108/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.253.109/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.110/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.111/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.112/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.253.113/32 
+           [110/1301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.114/32 
+           [110/1311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.115/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.116/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.117/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.119/32 [200/0] via 190.129.254.117, 1d01h
+B        181.115.253.126/32 [200/0] via 190.129.254.117, 07:07:58
+B        181.115.253.128/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.129/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.131/32 [200/0] via 190.129.254.117, 4d07h
+O        181.115.253.132/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.133/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.134/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.135/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.253.136/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.137/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.138/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.139/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.140/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.141/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.142/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.143/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.144/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.145/32 [200/0] via 190.129.254.117, 1w6d
+B        181.115.253.146/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.147/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.148/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.149/32 [200/0] via 190.129.254.117, 1d05h
+B        181.115.253.150/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.253.151/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.152/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.154/32 [200/0] via 190.129.254.117, 5w2d
+B        181.115.253.155/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.156/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.157/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.158/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.159/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.160/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.161/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.162/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.163/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.164/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.165/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.166/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.167/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.168/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.169/32 [200/0] via 190.129.254.117, 5d23h
+B        181.115.253.170/32 [200/0] via 190.129.254.117, 5d23h
+B        181.115.253.171/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.253.172/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.173/32 [200/0] via 190.129.254.117, 3w0d
+B        181.115.253.174/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.175/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.253.176/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.253.177/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.253.178/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.253.179/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.253.180/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.253.182/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.253.184/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.185/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.253.186/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.253.187/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.188/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.253.189/32 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.193/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.195/32 [200/0] via 190.129.254.117, 4w0d
+B        181.115.253.196/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.253.197/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.198/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.199/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.253.200/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.253.201/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.253.202/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.253.204/32 [200/0] via 190.129.254.117, 1w5d
+B        181.115.253.206/32 [200/0] via 190.129.254.117, 00:51:59
+B        181.115.253.207/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.253.208/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.253.209/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.253.210/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.211/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.212/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.213/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.214/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.215/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.216/32 [200/0] via 190.129.254.117, 18:20:33
+B        181.115.253.218/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.253.219/32 
+           [110/1500] via 10.130.117.242, 1d03h, TenGigabitEthernet0/0/26
+O        181.115.253.220/32 
+           [110/1500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.221/32 
+           [110/510] via 10.130.117.242, 1w0d, TenGigabitEthernet0/0/26
+O        181.115.253.222/32 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.223/32 
+           [110/500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.224/32 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.225/32 
+           [110/2200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.253.230/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.253.233/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.234/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.237/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.238/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.253.243/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.253.244/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.253.245/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.253.246/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.253.247/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.253.248/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.253.249/32 [200/0] via 190.129.254.117, 5w3d
+O        181.115.253.251/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.252/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.253/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.253.254/32 
+           [110/401] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.254.0/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.254.1/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.254.2/32 [200/0] via 190.129.254.117, 1d00h
+B        181.115.254.3/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.4/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.5/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.6/32 [200/0] via 190.129.254.117, 1d04h
+B        181.115.254.7/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.8/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.9/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.10/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.11/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.12/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.14/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.254.15/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.16/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.17/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.18/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.19/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.22/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.26/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.27/32 [200/0] via 190.129.254.117, 1d17h
+B        181.115.254.28/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.254.29/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.30/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.32/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.254.33/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.34/32 [200/0] via 190.129.254.117, 3w1d
+B        181.115.254.36/32 [200/0] via 190.129.254.117, 3w0d
+B        181.115.254.37/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.38/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.254.39/32 [200/0] via 190.129.254.117, 3w1d
+B        181.115.254.40/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.41/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.42/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.43/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.44/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.54/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.55/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.56/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.57/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.58/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.59/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.60/32 [200/0] via 190.129.254.117, 6d07h
+B        181.115.254.62/32 [200/0] via 190.129.254.117, 3w2d
+B        181.115.254.63/32 [200/0] via 190.129.254.117, 5d18h
+B        181.115.254.64/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.254.65/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.254.66/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.68/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.69/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.70/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.254.71/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.72/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.73/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.74/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.75/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.76/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.77/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.78/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.79/32 [200/0] via 190.129.254.117, 3d09h
+B        181.115.254.80/32 [200/0] via 190.129.254.117, 04:02:41
+B        181.115.254.81/32 [200/0] via 190.129.254.117, 3w2d
+B        181.115.254.82/32 [200/0] via 190.129.254.117, 3w2d
+B        181.115.254.83/32 [200/0] via 190.129.254.117, 3w2d
+B        181.115.254.84/32 [200/0] via 190.129.254.117, 3w4d
+B        181.115.254.85/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.86/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.254.87/32 [200/0] via 190.129.254.117, 1d02h
+B        181.115.254.88/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.254.90/32 [200/0] via 190.129.254.117, 2w5d
+B        181.115.254.91/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.94/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.254.95/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.254.96/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.254.97/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.254.98/32 [200/0] via 190.129.254.117, 22:31:08
+B        181.115.254.102/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.103/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.104/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.254.106/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.254.107/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.254.108/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.254.110/32 [200/0] via 190.129.254.117, 04:23:55
+B        181.115.254.114/32 [200/0] via 190.129.254.117, 4d08h
+B        181.115.254.115/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.254.116/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.117/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.254.118/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.119/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.254.120/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.254.121/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.254.122/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.254.123/32 [200/0] via 190.129.254.117, 1d01h
+B        181.115.254.124/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.254.125/32 [200/0] via 190.129.254.117, 6w1d
+B        181.115.254.127/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.128/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.129/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.131/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.132/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.133/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.134/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.135/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.136/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.254.137/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.254.138/32 [200/0] via 190.129.254.117, 5d21h
+B        181.115.254.139/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.141/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.142/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.254.143/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.144/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.145/32 [200/0] via 190.129.254.117, 3w2d
+B        181.115.254.147/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.148/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.149/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.254.152/32 [200/0] via 190.129.254.117, 6d11h
+B        181.115.254.153/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.158/32 [200/0] via 190.129.254.117, 6d01h
+B        181.115.254.160/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.254.161/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.254.162/32 [200/0] via 190.129.254.117, 4w6d
+O        181.115.254.163/32 
+           [110/2200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.254.164/32 
+           [110/1200] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.254.167/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.254.168/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.254.169/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.254.170/32 [200/0] via 190.129.254.117, 1w5d
+B        181.115.254.172/32 [200/0] via 190.129.254.117, 3w5d
+B        181.115.254.173/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.174/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.254.175/32 [200/0] via 190.129.254.117, 2d08h
+B        181.115.254.176/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.177/32 [200/0] via 190.129.254.117, 6d03h
+B        181.115.254.178/32 [200/0] via 190.129.254.117, 6d03h
+B        181.115.254.179/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.180/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.181/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.182/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.183/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.185/32 [200/0] via 190.129.254.117, 2d09h
+B        181.115.254.186/32 [200/0] via 190.129.254.117, 2d09h
+B        181.115.254.187/32 [200/0] via 190.129.254.117, 2d09h
+B        181.115.254.188/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.189/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.191/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.254.194/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.254.195/32 [200/0] via 190.129.254.117, 06:47:48
+B        181.115.254.196/32 [200/0] via 190.129.254.117, 1d01h
+B        181.115.254.199/32 [200/0] via 190.129.254.117, 04:43:31
+B        181.115.254.200/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.254.201/32 [200/0] via 190.129.254.117, 3w3d
+B        181.115.254.202/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.254.203/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.205/32 [200/0] via 190.129.254.117, 3d14h
+O        181.115.254.206/32 
+           [110/401] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.254.207/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.208/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.254.209/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.254.210/32 [200/0] via 190.129.254.117, 04:43:42
+B        181.115.254.211/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.254.214/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.215/32 [200/0] via 190.129.254.117, 1w6d
+B        181.115.254.216/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.254.217/32 [200/0] via 190.129.254.117, 1d03h
+B        181.115.254.218/32 [200/0] via 190.129.254.117, 4d07h
+O        181.115.254.219/32 
+           [110/1200] via 10.130.117.242, 1d16h, TenGigabitEthernet0/0/26
+B        181.115.254.220/32 [200/0] via 190.129.254.117, 6w5d
+B        181.115.254.221/32 [200/0] via 190.129.254.117, 3w1d
+B        181.115.254.223/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.254.224/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.225/32 [200/0] via 190.129.254.117, 2d06h
+B        181.115.254.226/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.254.227/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.228/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.229/32 [200/0] via 190.129.254.117, 5w1d
+B        181.115.254.230/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.254.231/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.232/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.233/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.254.234/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.254.235/32 [200/0] via 190.129.254.117, 01:05:01
+B        181.115.254.236/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.254.253/32 [200/0] via 190.129.254.117, 1d20h
+B        181.115.255.0/32 [200/0] via 190.129.254.117, 00:57:56
+B        181.115.255.1/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.2/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.3/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.4/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.5/32 [200/0] via 190.129.254.117, 2d00h
+B        181.115.255.6/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.7/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.8/32 [200/0] via 190.129.254.117, 1d06h
+B        181.115.255.9/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.10/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.11/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.12/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.13/32 [200/0] via 190.129.254.117, 03:10:45
+B        181.115.255.14/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.255.15/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.16/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.17/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.18/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.19/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.20/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.21/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.22/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.23/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.24/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.255.25/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.26/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.27/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.255.28/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.29/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.30/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.31/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.32/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.33/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.34/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.35/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.36/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.37/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.38/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.39/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.40/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.41/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.44/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.255.45/32 [200/0] via 190.129.254.117, 4w1d
+B        181.115.255.46/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.255.48/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.49/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.255.50/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.51/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.52/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.53/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.54/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.55/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.56/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.57/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.255.58/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.59/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.60/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.61/32 [200/0] via 190.129.254.117, 2d01h
+B        181.115.255.62/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.63/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.64/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.65/32 [200/0] via 190.129.254.117, 04:40:10
+B        181.115.255.66/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.67/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.255.68/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.69/32 [200/0] via 190.129.254.117, 16:18:54
+B        181.115.255.70/32 [200/0] via 190.129.254.117, 1d23h
+B        181.115.255.71/32 [200/0] via 190.129.254.117, 18:31:32
+B        181.115.255.72/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.73/32 [200/0] via 190.129.254.117, 3w1d
+O        181.115.255.74/32 
+           [110/1201] via 10.130.117.242, 1w0d, TenGigabitEthernet0/0/26
+B        181.115.255.75/32 [200/0] via 190.129.254.117, 1w0d
+O        181.115.255.76/32 
+           [110/1211] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.77/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.78/32 
+           [110/1211] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.79/32 
+           [110/1201] via 10.130.117.242, 2d21h, TenGigabitEthernet0/0/26
+O        181.115.255.80/32 
+           [110/1311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.81/32 
+           [110/1201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.255.82/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.83/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.84/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.85/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.86/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.87/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.88/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.255.89/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.255.90/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.255.91/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.255.92/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.255.94/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.255.95/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.255.96/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.97/32 [200/0] via 190.129.254.117, 3w4d
+B        181.115.255.98/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.99/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.100/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.101/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.255.102/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.103/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.104/32 [200/0] via 190.129.254.117, 2d08h
+B        181.115.255.105/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.106/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.108/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.255.109/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.110/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.111/32 [200/0] via 190.129.254.117, 00:51:50
+B        181.115.255.112/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.255.113/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.255.114/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.115/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.116/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.255.117/32 [200/0] via 190.129.254.117, 1d09h
+B        181.115.255.118/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.119/32 [200/0] via 190.129.254.117, 1d22h
+B        181.115.255.120/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.121/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.122/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.255.123/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.255.124/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.125/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.126/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.127/32 [200/0] via 190.129.254.117, 6d18h
+B        181.115.255.128/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.255.129/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.255.130/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.131/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.132/32 [200/0] via 190.129.254.117, 1w0d
+B        181.115.255.133/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.134/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.135/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.255.136/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.137/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.138/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.139/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.140/32 [200/0] via 190.129.254.117, 3w6d
+B        181.115.255.141/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.142/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.143/32 [200/0] via 190.129.254.117, 2d18h
+B        181.115.255.144/32 [200/0] via 190.129.254.117, 21:05:24
+B        181.115.255.145/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.255.146/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.255.147/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.148/32 [200/0] via 190.129.254.117, 6d21h
+B        181.115.255.149/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.255.150/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.151/32 [200/0] via 190.129.254.117, 1w3d
+B        181.115.255.152/32 [200/0] via 190.129.254.117, 3w0d
+B        181.115.255.153/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.155/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.255.156/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.255.157/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.158/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.255.159/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.160/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.161/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.162/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.163/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.255.164/32 [200/0] via 190.129.254.117, 1w4d
+B        181.115.255.165/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.166/32 [200/0] via 190.129.254.117, 3d14h
+B        181.115.255.167/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.168/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.169/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.170/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.255.171/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.172/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.173/32 [200/0] via 190.129.254.117, 5w2d
+B        181.115.255.174/32 [200/0] via 190.129.254.117, 6w2d
+B        181.115.255.175/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.255.176/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.177/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.178/32 [200/0] via 190.129.254.117, 6d03h
+B        181.115.255.179/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.180/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.255.181/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.182/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.183/32 [200/0] via 190.129.254.117, 5w3d
+B        181.115.255.184/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.255.185/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.255.186/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.255.187/32 [200/0] via 190.129.254.117, 1d10h
+O        181.115.255.188/32 
+           [110/201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.189/32 
+           [110/411] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.190/32 
+           [110/2201] via 10.130.117.242, 1w0d, TenGigabitEthernet0/0/26
+O        181.115.255.191/32 
+           [110/311] via 10.130.117.242, 2w1d, TenGigabitEthernet0/0/26
+B        181.115.255.192/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.193/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.194/32 [200/0] via 190.129.254.117, 4w0d
+B        181.115.255.195/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.255.196/32 [200/0] via 190.129.254.117, 5d03h
+B        181.115.255.197/32 [200/0] via 190.129.254.117, 1w1d
+B        181.115.255.198/32 [200/0] via 190.129.254.117, 6w0d
+B        181.115.255.199/32 [200/0] via 190.129.254.117, 6d08h
+B        181.115.255.200/32 [200/0] via 190.129.254.117, 1w1d
+O        181.115.255.207/32 
+           [110/1201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.208/32 
+           [110/1201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.255.209/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.210/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.211/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.212/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.213/32 [200/0] via 190.129.254.117, 2w0d
+B        181.115.255.214/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.216/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.217/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.218/32 [200/0] via 190.129.254.117, 04:43:59
+B        181.115.255.219/32 [200/0] via 190.129.254.117, 04:38:15
+B        181.115.255.222/32 [200/0] via 190.129.254.117, 4d07h
+B        181.115.255.223/32 [200/0] via 190.129.254.117, 2w3d
+B        181.115.255.224/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.225/32 [200/0] via 190.129.254.117, 4w4d
+B        181.115.255.226/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.227/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.228/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.229/32 [200/0] via 190.129.254.117, 5w2d
+B        181.115.255.230/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.231/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.232/32 [200/0] via 190.129.254.117, 2w6d
+B        181.115.255.234/32 [200/0] via 190.129.254.117, 2w1d
+O        181.115.255.236/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        181.115.255.237/32 
+           [110/101] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+C        181.115.255.238/32 is directly connected, Loopback0
+B        181.115.255.239/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.240/32 [200/0] via 190.129.254.117, 7w0d
+B        181.115.255.241/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.242/32 [200/0] via 190.129.254.117, 2w1d
+B        181.115.255.243/32 [200/0] via 190.129.254.117, 1d16h
+B        181.115.255.244/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.255.245/32 [200/0] via 190.129.254.117, 3d16h
+O        181.115.255.246/32 
+           [110/501] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        181.115.255.247/32 [200/0] via 190.129.254.117, 1w2d
+B        181.115.255.248/32 [200/0] via 190.129.254.117, 2w4d
+B        181.115.255.249/32 [200/0] via 190.129.254.117, 2d08h
+B        181.115.255.250/32 [200/0] via 190.129.254.117, 2w2d
+B        181.115.255.251/32 [200/0] via 190.129.254.117, 2d06h
+B        181.115.255.252/32 [200/0] via 190.129.254.117, 00:01:42
+B        181.115.255.253/32 [200/0] via 190.129.254.117, 2d06h
+B        181.115.255.254/32 [200/0] via 190.129.254.117, 00:01:38
+B        181.115.255.255/32 [200/0] via 190.129.254.117, 2d03h
+      186.148.0.0/32 is subnetted, 4 subnets
+B        186.148.199.252 [200/0] via 190.129.254.117, 6w2d
+B        186.148.199.253 [200/0] via 190.129.254.117, 6w2d
+B        186.148.199.254 [200/0] via 190.129.254.117, 5w3d
+B        186.148.199.255 [200/0] via 190.129.254.117, 5w3d
+      190.129.0.0/16 is variably subnetted, 204 subnets, 7 masks
+B        190.129.0.0/16 [200/0] via 190.129.254.117, 6d18h
+B        190.129.0.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.16.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.32.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.38.0/24 [200/0] via 190.129.254.117, 2w2d
+B        190.129.48.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.64.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.80.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.96.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.112.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.117.0/28 [200/0] via 190.129.254.117, 7w0d
+B        190.129.126.0/23 [200/0] via 190.129.254.117, 7w0d
+B        190.129.128.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.144.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.153.212/30 [200/0] via 190.129.254.117, 2w1d
+B        190.129.160.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.176.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.188.65/32 [200/0] via 190.129.254.117, 4d07h
+B        190.129.189.42/32 [200/0] via 190.129.254.117, 1d12h
+B        190.129.189.70/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.189.71/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.190.46/32 [200/0] via 190.129.254.117, 4d07h
+B        190.129.192.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.208.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.224.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.238.0/24 [200/0] via 190.129.254.117, 7w0d
+B        190.129.239.0/24 [200/0] via 190.129.254.117, 7w0d
+B        190.129.240.0/20 [200/0] via 190.129.254.117, 6d18h
+B        190.129.241.184/30 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.3/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.4/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.5/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.6/32 [200/0] via 190.129.254.117, 7w0d
+O        190.129.253.7/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        190.129.253.9/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.10/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.11/32 [200/0] via 190.129.254.117, 3w5d
+B        190.129.253.12/32 [200/0] via 190.129.254.117, 6d08h
+B        190.129.253.13/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.14/32 [200/0] via 190.129.254.117, 3w1d
+B        190.129.253.15/32 [200/0] via 190.129.254.117, 3w1d
+B        190.129.253.16/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.18/32 [200/0] via 190.129.254.117, 4d00h
+B        190.129.253.19/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.20/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.21/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.22/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.23/32 [200/0] via 190.129.254.117, 3w6d
+B        190.129.253.24/32 [200/0] via 190.129.254.117, 1w3d
+B        190.129.253.25/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.26/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.27/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.30/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.31/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.32/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.33/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.37/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.38/32 [200/0] via 190.129.254.117, 3w1d
+B        190.129.253.39/32 [200/0] via 190.129.254.117, 3w1d
+B        190.129.253.40/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.41/32 [200/0] via 190.129.254.117, 1w3d
+B        190.129.253.42/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.44/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.45/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.48/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.49/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.50/32 [200/0] via 190.129.254.117, 3w1d
+B        190.129.253.52/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.53/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.54/32 [200/0] via 190.129.254.117, 1w0d
+B        190.129.253.58/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.59/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.60/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.63/32 [200/0] via 190.129.254.117, 1d03h
+B        190.129.253.64/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.65/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.66/32 [200/0] via 190.129.254.117, 7w0d
+O        190.129.253.67/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.253.68/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        190.129.253.69/32 [200/0] via 190.129.254.117, 5w3d
+B        190.129.253.72/32 [200/0] via 190.129.254.117, 1w1d
+B        190.129.253.74/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.75/32 [200/0] via 190.129.254.117, 23:14:03
+B        190.129.253.76/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.78/32 [200/0] via 190.129.254.117, 1w2d
+B        190.129.253.79/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.80/32 [200/0] via 190.129.254.117, 1w1d
+B        190.129.253.81/32 [200/0] via 190.129.254.117, 3w3d
+B        190.129.253.82/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.84/32 [200/0] via 190.129.254.117, 2w5d
+B        190.129.253.85/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.86/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.90/32 [200/0] via 190.129.254.117, 1w0d
+B        190.129.253.93/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.95/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.96/32 [200/0] via 190.129.254.117, 3w4d
+B        190.129.253.97/32 [200/0] via 190.129.254.117, 3w4d
+B        190.129.253.98/32 [200/0] via 190.129.254.117, 3w4d
+B        190.129.253.99/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.100/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.101/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.113/32 [200/0] via 190.129.254.117, 1d16h
+B        190.129.253.114/32 [200/0] via 190.129.254.117, 1d16h
+B        190.129.253.115/32 [200/0] via 190.129.254.117, 1d16h
+O        190.129.253.116/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.253.117/32 
+           [110/401] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        190.129.253.120/32 [200/0] via 190.129.254.117, 5w3d
+B        190.129.253.121/32 [200/0] via 190.129.254.117, 6d21h
+O        190.129.253.123/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.253.124/32 
+           [110/301] via 10.130.117.242, 3d14h, TenGigabitEthernet0/0/26
+O        190.129.253.125/32 
+           [110/401] via 10.130.117.242, 3d14h, TenGigabitEthernet0/0/26
+B        190.129.253.126/32 [200/0] via 190.129.254.117, 3w4d
+B        190.129.253.128/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.130/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.131/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.132/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.133/32 [200/0] via 190.129.254.117, 1w4d
+O        190.129.253.135/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.253.136/32 
+           [110/411] via 10.130.117.242, 1w2d, TenGigabitEthernet0/0/26
+O        190.129.253.137/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        190.129.253.138/32 [200/0] via 190.129.254.117, 5w3d
+B        190.129.253.139/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.140/32 [200/0] via 190.129.254.117, 4d07h
+B        190.129.253.142/32 [200/0] via 190.129.254.117, 1w1d
+B        190.129.253.143/32 [200/0] via 190.129.254.117, 1w1d
+B        190.129.253.144/32 [200/0] via 190.129.254.117, 1w2d
+B        190.129.253.145/32 [200/0] via 190.129.254.117, 7w0d
+O        190.129.253.146/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.253.147/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.253.148/32 
+           [110/301] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        190.129.253.150/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.152/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.153/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.157/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.158/32 [200/0] via 190.129.254.117, 5w1d
+B        190.129.253.160/32 [200/0] via 190.129.254.117, 1w2d
+B        190.129.253.161/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.162/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.166/32 [200/0] via 190.129.254.117, 4d07h
+B        190.129.253.167/32 [200/0] via 190.129.254.117, 4d07h
+B        190.129.253.168/32 [200/0] via 190.129.254.117, 3d03h
+B        190.129.253.171/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.172/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.173/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.174/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.175/32 [200/0] via 190.129.254.117, 1w1d
+B        190.129.253.177/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.182/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.183/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.184/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.185/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.186/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.187/32 [200/0] via 190.129.254.117, 2w1d
+O        190.129.253.188/32 
+           [110/1300] via 10.130.117.242, 2w1d, TenGigabitEthernet0/0/26
+O        190.129.253.189/32 
+           [110/2300] via 10.130.117.242, 2w1d, TenGigabitEthernet0/0/26
+B        190.129.253.190/32 [200/0] via 190.129.254.117, 4d07h
+B        190.129.253.191/32 [200/0] via 190.129.254.117, 4d07h
+B        190.129.253.192/32 [200/0] via 190.129.254.117, 3d14h
+B        190.129.253.193/32 [200/0] via 190.129.254.117, 1w4d
+B        190.129.253.194/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.195/32 [200/0] via 190.129.254.117, 3d14h
+B        190.129.253.196/32 [200/0] via 190.129.254.117, 3d14h
+B        190.129.253.197/32 [200/0] via 190.129.254.117, 1w4d
+B        190.129.253.198/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.199/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.200/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.201/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.202/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.203/32 [200/0] via 190.129.254.117, 2w1d
+O        190.129.253.207/32 
+           [110/1201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.253.208/32 
+           [110/311] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        190.129.253.209/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.210/32 [200/0] via 190.129.254.117, 1w1d
+B        190.129.253.211/32 [200/0] via 190.129.254.117, 3w4d
+B        190.129.253.212/32 [200/0] via 190.129.254.117, 3w4d
+B        190.129.253.213/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.214/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.215/32 [200/0] via 190.129.254.117, 3w3d
+B        190.129.253.216/32 [200/0] via 190.129.254.117, 3w3d
+B        190.129.253.217/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.218/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.219/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.220/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.224/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.225/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.226/32 [200/0] via 190.129.254.117, 2w1d
+O        190.129.253.227/32 
+           [110/2500] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        190.129.253.229/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.230/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.231/32 [200/0] via 190.129.254.117, 4w1d
+B        190.129.253.232/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.235/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.243/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.244/32 [200/0] via 190.129.254.117, 2w2d
+B        190.129.253.245/32 [200/0] via 190.129.254.117, 2w6d
+B        190.129.253.248/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.249/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.250/32 [200/0] via 190.129.254.117, 2w1d
+B        190.129.253.251/32 [200/0] via 190.129.254.117, 1w4d
+B        190.129.253.252/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.253/32 [200/0] via 190.129.254.117, 7w0d
+B        190.129.253.254/32 [200/0] via 190.129.254.117, 1w4d
+O        190.129.254.117/32 
+           [110/201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        190.129.254.118/32 
+           [110/211] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B     200.87.0.0/16 [200/0] via 190.129.254.117, 6d18h
+B     200.87.0.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.16.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.20.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.23.0/24 [200/0] via 190.129.254.117, 7w0d
+      200.87.26.0/29 is subnetted, 1 subnets
+B        200.87.26.80 [200/0] via 190.129.254.117, 7w0d
+      200.87.27.0/29 is subnetted, 1 subnets
+B        200.87.27.40 [200/0] via 190.129.254.117, 7w0d
+B     200.87.29.0/24 [200/0] via 190.129.254.117, 4w1d
+B     200.87.32.0/20 [200/0] via 190.129.254.117, 6d18h
+      200.87.42.0/29 is subnetted, 1 subnets
+B        200.87.42.72 [200/0] via 190.129.254.117, 1d07h
+B     200.87.48.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.64.0/20 [200/0] via 190.129.254.117, 6d18h
+      200.87.67.0/30 is subnetted, 1 subnets
+B        200.87.67.28 [200/0] via 190.129.254.117, 7w0d
+B     200.87.80.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.95.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.96.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.99.0/24 [200/0] via 190.129.254.117, 7w0d
+      200.87.100.0/24 is variably subnetted, 3 subnets, 2 masks
+B        200.87.100.0/24 [200/0] via 190.129.254.117, 7w0d
+B        200.87.100.10/32 [200/0] via 190.129.254.117, 6d18h
+B        200.87.100.40/32 [200/0] via 190.129.254.117, 6d18h
+      200.87.101.0/24 is variably subnetted, 2 subnets, 2 masks
+B        200.87.101.0/24 [200/0] via 190.129.254.117, 7w0d
+B        200.87.101.128/25 [200/0] via 190.129.254.117, 7w0d
+B     200.87.102.0/23 [200/0] via 190.129.254.117, 7w0d
+B     200.87.104.0/21 [200/0] via 190.129.254.117, 7w0d
+B     200.87.112.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.117.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.120.0/21 [200/0] via 190.129.254.117, 7w0d
+B     200.87.128.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.128.0/22 [200/0] via 190.129.254.117, 7w0d
+B     200.87.133.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.135.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.138.0/23 [200/0] via 190.129.254.117, 7w0d
+B     200.87.144.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.149.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.150.0/23 [200/0] via 190.129.254.117, 7w0d
+B     200.87.152.0/21 [200/0] via 190.129.254.117, 7w0d
+B     200.87.157.0/24 [200/0] via 190.129.254.117, 3d07h
+B     200.87.160.0/20 [200/0] via 190.129.254.117, 6d18h
+      200.87.170.0/29 is subnetted, 1 subnets
+B        200.87.170.0 [200/0] via 190.129.254.117, 2w1d
+B     200.87.176.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.179.0/24 [200/0] via 190.129.254.117, 6d18h
+B     200.87.180.0/24 [200/0] via 190.129.254.117, 7w0d
+      200.87.181.0/30 is subnetted, 1 subnets
+B        200.87.181.56 [200/0] via 190.129.254.117, 4d07h
+      200.87.190.0/25 is subnetted, 2 subnets
+B        200.87.190.0 [200/0] via 190.129.254.117, 7w0d
+B        200.87.190.128 [200/0] via 190.129.254.117, 7w0d
+B     200.87.192.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.194.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.198.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.200.0/22 [200/0] via 190.129.254.117, 7w0d
+B     200.87.208.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.224.0/20 [200/0] via 190.129.254.117, 6d18h
+B     200.87.224.0/21 [200/0] via 190.129.254.117, 7w0d
+B     200.87.232.0/21 [200/0] via 190.129.254.117, 7w0d
+B     200.87.240.0/20 [200/0] via 190.129.254.117, 7w0d
+      200.87.250.0/32 is subnetted, 165 subnets
+B        200.87.250.16 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.17 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.18 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.19 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.20 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.21 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.22 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.23 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.24 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.25 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.26 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.27 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.28 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.29 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.30 [200/0] via 190.129.254.117, 1w0d
+B        200.87.250.31 [200/0] via 190.129.254.117, 1w0d
+B        200.87.250.32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.33 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.36 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.37 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.38 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.39 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.40 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.41 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.42 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.43 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.44 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.45 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.46 [200/0] via 190.129.254.117, 6w2d
+B        200.87.250.47 [200/0] via 190.129.254.117, 6w2d
+B        200.87.250.48 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.49 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.50 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.51 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.52 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.53 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.54 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.55 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.56 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.57 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.58 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.59 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.60 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.61 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.62 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.63 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.64 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.65 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.66 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.67 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.68 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.69 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.70 [200/0] via 190.129.254.117, 4w1d
+B        200.87.250.71 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.72 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.73 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.74 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.75 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.76 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.77 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.78 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.79 [200/0] via 190.129.254.117, 4w1d
+B        200.87.250.80 [200/0] via 190.129.254.117, 3w6d
+B        200.87.250.81 [200/0] via 190.129.254.117, 4w0d
+B        200.87.250.82 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.83 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.84 [200/0] via 190.129.254.117, 6w5d
+B        200.87.250.85 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.86 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.87 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.88 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.89 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.90 [200/0] via 190.129.254.117, 4w6d
+B        200.87.250.91 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.92 [200/0] via 190.129.254.117, 5w3d
+B        200.87.250.93 [200/0] via 190.129.254.117, 5w3d
+B        200.87.250.94 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.95 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.98 [200/0] via 190.129.254.117, 4w2d
+B        200.87.250.99 [200/0] via 190.129.254.117, 4w2d
+B        200.87.250.100 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.101 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.102 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.103 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.104 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.105 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.106 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.107 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.108 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.109 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.110 [200/0] via 190.129.254.117, 1w4d
+B        200.87.250.111 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.112 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.113 [200/0] via 190.129.254.117, 4w1d
+B        200.87.250.114 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.115 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.116 [200/0] via 190.129.254.117, 6w5d
+B        200.87.250.117 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.120 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.121 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.122 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.123 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.124 [200/0] via 190.129.254.117, 1w1d
+B        200.87.250.125 [200/0] via 190.129.254.117, 1w1d
+B        200.87.250.128 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.129 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.130 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.131 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.132 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.133 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.137 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.141 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.142 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.143 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.146 [200/0] via 190.129.254.117, 2w4d
+B        200.87.250.147 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.148 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.149 [200/0] via 190.129.254.117, 6w0d
+B        200.87.250.150 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.154 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.155 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.160 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.161 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.162 [200/0] via 190.129.254.117, 1w3d
+B        200.87.250.163 [200/0] via 190.129.254.117, 1w3d
+B        200.87.250.164 [200/0] via 190.129.254.117, 6w3d
+B        200.87.250.165 [200/0] via 190.129.254.117, 6w3d
+B        200.87.250.166 [200/0] via 190.129.254.117, 1d22h
+B        200.87.250.167 [200/0] via 190.129.254.117, 1d22h
+B        200.87.250.169 [200/0] via 190.129.254.117, 5w1d
+B        200.87.250.170 [200/0] via 190.129.254.117, 5w1d
+B        200.87.250.171 [200/0] via 190.129.254.117, 5w1d
+B        200.87.250.172 [200/0] via 190.129.254.117, 5w1d
+B        200.87.250.173 [200/0] via 190.129.254.117, 02:22:31
+B        200.87.250.174 [200/0] via 190.129.254.117, 02:22:29
+B        200.87.250.177 [200/0] via 190.129.254.117, 2d15h
+B        200.87.250.178 [200/0] via 190.129.254.117, 2d15h
+B        200.87.250.179 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.180 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.181 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.182 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.183 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.184 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.185 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.186 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.187 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.188 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.189 [200/0] via 190.129.254.117, 3w3d
+B        200.87.250.190 [200/0] via 190.129.254.117, 3w3d
+B        200.87.250.191 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.192 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.193 [200/0] via 190.129.254.117, 1w1d
+B        200.87.250.194 [200/0] via 190.129.254.117, 1w1d
+B        200.87.250.195 [200/0] via 190.129.254.117, 1w1d
+B        200.87.250.196 [200/0] via 190.129.254.117, 1w1d
+B        200.87.250.197 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.199 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.201 [200/0] via 190.129.254.117, 5w2d
+B        200.87.250.202 [200/0] via 190.129.254.117, 5w2d
+B        200.87.250.203 [200/0] via 190.129.254.117, 7w0d
+B        200.87.250.204 [200/0] via 190.129.254.117, 1w0d
+B        200.87.250.205 [200/0] via 190.129.254.117, 1w0d
+B        200.87.250.206 [200/0] via 190.129.254.117, 1w2d
+B        200.87.250.216 [200/0] via 190.129.254.117, 1w3d
+B        200.87.250.217 [200/0] via 190.129.254.117, 1w3d
+B     200.87.252.0/24 [200/0] via 190.129.254.117, 7w0d
+B     200.87.253.0/24 [200/0] via 190.129.254.117, 7w0d
+      200.87.254.0/24 is variably subnetted, 68 subnets, 2 masks
+B        200.87.254.0/24 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.7/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.8/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.21/32 [200/0] via 190.129.254.117, 2w1d
+B        200.87.254.34/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.52/32 [200/0] via 190.129.254.117, 4w1d
+B        200.87.254.57/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.58/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.59/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.60/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.61/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.62/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.105/32 [200/0] via 190.129.254.117, 4w1d
+B        200.87.254.109/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.110/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.111/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.112/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.113/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.114/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.115/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.116/32 [200/0] via 190.129.254.117, 7w0d
+O        200.87.254.117/32 
+           [110/201] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+O        200.87.254.118/32 
+           [110/211] via 10.130.117.242, 2w3d, TenGigabitEthernet0/0/26
+B        200.87.254.119/32 [200/0] via 190.129.254.117, 4w1d
+B        200.87.254.120/32 [200/0] via 190.129.254.117, 4w1d
+B        200.87.254.121/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.122/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.123/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.124/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.125/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.126/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.127/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.128/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.129/32 [200/0] via 190.129.254.117, 6w2d
+B        200.87.254.130/32 [200/0] via 190.129.254.117, 6w2d
+B        200.87.254.141/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.142/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.143/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.144/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.145/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.146/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.160/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.161/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.162/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.163/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.164/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.165/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.166/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.167/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.168/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.169/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.170/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.171/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.172/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.173/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.174/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.175/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.176/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.177/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.178/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.179/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.200/32 [200/0] via 190.129.254.117, 1w2d
+B        200.87.254.201/32 [200/0] via 190.129.254.117, 1w2d
+B        200.87.254.202/32 [200/0] via 190.129.254.117, 1w2d
+B        200.87.254.220/32 [200/0] via 190.129.254.117, 1w2d
+B        200.87.254.221/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.253/32 [200/0] via 190.129.254.117, 7w0d
+B        200.87.254.254/32 [200/0] via 190.129.254.117, 7w0d
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show ip route 200.87.254.101
+Routing entry for 200.87.254.0/24
+  Known via "bgp 6568", distance 200, metric 0, type internal
+  Last update from 190.129.254.117 7w0d ago
+  Routing Descriptor Blocks:
+  * 190.129.254.117, from 190.129.254.117, 7w0d ago
+      Route metric is 0, traffic share count is 1
+      AS Hops 0
+      MPLS label: 35378
+      MPLS Flags: NSF
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>Show ip bgp nei
+BGP neighbor is 190.129.254.117,  remote AS 6568, internal link
+ Description: CBB-CE-CENTRAL-01
+  BGP version 4, remote router ID 200.87.254.117
+  BGP state = Established, up for 9w3d
+  Last read 00:00:01, last write 00:00:16, hold time is 180, keepalive interval is 60 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled)
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Four-octets ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised
+    ipv4 MPLS Label capability: advertised and received
+    Address family IPv6 Unicast: received
+    Address family VPNv4 Unicast: advertised and received
+    Address family VPNv6 Unicast: received
+    Graceful Restart Capability: advertised and received
+      Remote Restart timer is 120 seconds
+      Address families advertised by peer:
+        IPv4 Unicast (was preserved, VPNv4 Unicast (was preserved
+    Enhanced Refresh Capability: advertised
+    Multisession Capability: 
+    Stateful switchover support enabled: NO for session 1
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  1          1
+    Notifications:          0          0
+    Updates:            12369    7718999
+    Keepalives:        104593        114
+    Route Refresh:          0          0
+    Total:             116963    7719114
+  Do log neighbor state changes (via global configuration)
+  Default minimum time between advertisement runs is 0 seconds
+
+ For address family: IPv4 Unicast
+  Session: 190.129.254.117
+  BGP table version 185206, neighbor version 185206/0
+  Output queue size : 0
+  Index 2, Advertise bit 0
+  2 update-group member
+  NEXT_HOP is always this router for eBGP paths
+  Community attribute sent to this neighbor
+  Inbound path policy configured
+  Route map for incoming advertisements is SET_WEIGHT_200
+  Sending Prefix & Label
+  Slow-peer detection is disabled
+  Slow-peer split-update-group dynamic is disabled
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               1       1713 (Consumes 150744 bytes)
+    Prefixes Total:                 1     166354
+    Implicit Withdraw:              0     157925
+    Explicit Withdraw:           1749       6716
+    Used as bestpath:             n/a       1713
+    Used as multipath:            n/a          0
+    Used as secondary:            n/a          0
+
+                                   Outbound    Inbound
+  Local Policy Denied Prefixes:    --------    -------
+    ORIGINATOR loop:                    n/a          1
+    Bestpath from this peer:         162040        n/a
+    Bestpath from iBGP peer:           6281        n/a
+    Total:                           168321          1
+  Number of NLRIs in the update sent: max 515, min 0
+  Last detected as dynamic slow peer: never
+  Dynamic slow peer recovered: never
+  Refresh Epoch: 1
+  Last Sent Refresh Start-of-rib: never
+  Last Sent Refresh End-of-rib: never
+  Last Received Refresh Start-of-rib: never
+  Last Received Refresh End-of-rib: never
+				       Sent	  Rcvd
+	Refresh activity:	       ----	  ----
+	  Refresh Start-of-RIB          0          0
+	  Refresh End-of-RIB            0          0
+
+ For address family: VPNv4 Unicast
+  Session: 190.129.254.117
+  BGP table version 2528213, neighbor version 2528213/0
+  Output queue size : 0
+  Index 2, Advertise bit 0
+  2 update-group member
+  NEXT_HOP is always this router for eBGP paths
+  Community attribute sent to this neighbor
+  Extended-community attribute sent to this neighbor
+  Slow-peer detection is disabled
+  Slow-peer split-update-group dynamic is disabled
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               5       9747 (Consumes 906292 bytes)
+    Prefixes Total:             10070    1398560
+    Implicit Withdraw:              0    1118231
+    Explicit Withdraw:          19308     270582
+    Used as bestpath:             n/a       9800
+    Used as multipath:            n/a          0
+    Used as secondary:            n/a          0
+
+                                   Outbound    Inbound
+  Local Policy Denied Prefixes:    --------    -------
+    ORIGINATOR loop:                    n/a      14135
+    Bestpath from this peer:        1371214        n/a
+    Bestpath from iBGP peer:         204880        n/a
+    AF Permit Check:                 373731        n/a
+    Total:                          1949825      14135
+  Number of NLRIs in the update sent: max 255, min 0
+  Last detected as dynamic slow peer: never
+  Dynamic slow peer recovered: never
+  Refresh Epoch: 1
+  Last Sent Refresh Start-of-rib: never
+  Last Sent Refresh End-of-rib: never
+  Last Received Refresh Start-of-rib: never
+  Last Received Refresh End-of-rib: never
+				       Sent	  Rcvd
+	Refresh activity:	       ----	  ----
+	  Refresh Start-of-RIB          0          0
+	  Refresh End-of-RIB            0          0
+
+  Address tracking is enabled, the RIB does have a route to 190.129.254.117
+  Route to peer address reachability Up: 3; Down: 1
+    Last notification 9w3d
+  Connections established 1; dropped 0
+  Last reset never
+  Interface associated: (none) (peering address NOT in same link)
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is enabled, restart-time 120 seconds, stalepath-time 360 seconds
+  SSO is enabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 181.115.255.238, Local port: 31199
+Foreign host: 190.129.254.117, Foreign port: 179
+Connection tableid (VRF): 0
+Maximum output segment queue size: 50
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: -460 (0 bytes)
+
+Event Timers (current time is 0x1593F52C4):
+Timer          Starts    Wakeups            Next
+Retrans        113275          7             0x0
+TimeWait            0          0             0x0
+AckHold       5327004    3453361             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            0          0             0x0
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss:  362878365  snduna:  366171600  sndnxt:  366171600
+irs:  227393049  rcvnxt: 1547436206
+
+sndwnd:  32312  scale:      0  maxrcvwnd:  16384
+rcvwnd:  16217  scale:      0  delrcvwnd:    167
+
+SRTT: 1000 ms, RTTO: 1003 ms, RTV: 3 ms, KRTT: 0 ms
+minRTT: 0 ms, maxRTT: 1000 ms, ACK hold: 200 ms
+uptime: -1 ms, Sent idletime: 1228 ms, Receive idletime: 1428 ms 
+Status Flags: active open, sso candidate
+Option Flags: nagle, md5
+IP Precedence value : 6
+
+Datagrams (max data segment is 536 bytes):
+Rcvd: 5954572 (out of order: 25917), with data: 5849024, total data bytes: 1320043156
+Sent: 5920152 (retransmit: 7, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 115644, total data bytes: 3293234
+SSO last disable reason: Application disable (Active)
+
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+TCP Semaphore      0x7EBCC854  FREE 
+
+BGP neighbor is 190.129.254.118,  remote AS 6568, internal link
+ Description: CBB-CE-CENTRAL-02
+  BGP version 4, remote router ID 200.87.254.118
+  BGP state = Established, up for 9w3d
+  Last read 00:00:01, last write 00:00:54, hold time is 180, keepalive interval is 60 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled)
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Four-octets ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised
+    ipv4 MPLS Label capability: advertised and received
+    Address family IPv6 Unicast: received
+    Address family VPNv4 Unicast: advertised and received
+    Address family VPNv6 Unicast: received
+    Graceful Restart Capability: advertised and received
+      Remote Restart timer is 120 seconds
+      Address families advertised by peer:
+        IPv4 Unicast (was not preserved, VPNv4 Unicast (was not preserved
+    Enhanced Refresh Capability: advertised
+    Multisession Capability: 
+    Stateful switchover support enabled: NO for session 1
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  1          1
+    Notifications:          0          0
+    Updates:            12371    7498895
+    Keepalives:        104573        114
+    Route Refresh:          0          0
+    Total:             116945    7499010
+  Do log neighbor state changes (via global configuration)
+  Default minimum time between advertisement runs is 0 seconds
+
+ For address family: IPv4 Unicast
+  Session: 190.129.254.118
+  BGP table version 185206, neighbor version 185206/0
+  Output queue size : 0
+  Index 2, Advertise bit 0
+  2 update-group member
+  NEXT_HOP is always this router for eBGP paths
+  Community attribute sent to this neighbor
+  Inbound path policy configured
+  Route map for incoming advertisements is SET_WEIGHT_100
+  Sending Prefix & Label
+  Slow-peer detection is disabled
+  Slow-peer split-update-group dynamic is disabled
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               1       1712 (Consumes 150656 bytes)
+    Prefixes Total:                 1     162022
+    Implicit Withdraw:              0     153780
+    Explicit Withdraw:           1749       6530
+    Used as bestpath:             n/a          0
+    Used as multipath:            n/a          0
+    Used as secondary:            n/a          0
+
+                                   Outbound    Inbound
+  Local Policy Denied Prefixes:    --------    -------
+    ORIGINATOR loop:                    n/a          2
+    Bestpath from this peer:         162040        n/a
+    Bestpath from iBGP peer:           6281        n/a
+    Total:                           168321          2
+  Number of NLRIs in the update sent: max 515, min 0
+  Last detected as dynamic slow peer: never
+  Dynamic slow peer recovered: never
+  Refresh Epoch: 1
+  Last Sent Refresh Start-of-rib: never
+  Last Sent Refresh End-of-rib: never
+  Last Received Refresh Start-of-rib: never
+  Last Received Refresh End-of-rib: never
+				       Sent	  Rcvd
+	Refresh activity:	       ----	  ----
+	  Refresh Start-of-RIB          0          0
+	  Refresh End-of-RIB            0          0
+
+ For address family: VPNv4 Unicast
+  Session: 190.129.254.118
+  BGP table version 2528213, neighbor version 2528213/0
+  Output queue size : 0
+  Index 2, Advertise bit 0
+  2 update-group member
+  NEXT_HOP is always this router for eBGP paths
+  Community attribute sent to this neighbor
+  Extended-community attribute sent to this neighbor
+  Slow-peer detection is disabled
+  Slow-peer split-update-group dynamic is disabled
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               5       9747 (Consumes 896724 bytes)
+    Prefixes Total:             10070    1442717
+    Implicit Withdraw:              0    1162741
+    Explicit Withdraw:          19308     270229
+    Used as bestpath:             n/a          0
+    Used as multipath:            n/a          0
+    Used as secondary:            n/a          0
+
+                                   Outbound    Inbound
+  Local Policy Denied Prefixes:    --------    -------
+    ORIGINATOR loop:                    n/a      27588
+    Bestpath from this peer:        1371214        n/a
+    Bestpath from iBGP peer:         204880        n/a
+    AF Permit Check:                 373731        n/a
+    Total:                          1949825      27588
+  Number of NLRIs in the update sent: max 255, min 0
+  Last detected as dynamic slow peer: never
+  Dynamic slow peer recovered: never
+  Refresh Epoch: 1
+  Last Sent Refresh Start-of-rib: never
+  Last Sent Refresh End-of-rib: never
+  Last Received Refresh Start-of-rib: never
+  Last Received Refresh End-of-rib: never
+				       Sent	  Rcvd
+	Refresh activity:	       ----	  ----
+	  Refresh Start-of-RIB          0          0
+	  Refresh End-of-RIB            0          0
+
+  Address tracking is enabled, the RIB does have a route to 190.129.254.118
+  Route to peer address reachability Up: 3; Down: 1
+    Last notification 9w3d
+  Connections established 1; dropped 0
+  Last reset never
+  Interface associated: (none) (peering address NOT in same link)
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is enabled, restart-time 120 seconds, stalepath-time 360 seconds
+  SSO is enabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 181.115.255.238, Local port: 29687
+Foreign host: 190.129.254.118, Foreign port: 179
+Connection tableid (VRF): 0
+Maximum output segment queue size: 50
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: -538 (0 bytes)
+
+Event Timers (current time is 0x1593F52CC):
+Timer          Starts    Wakeups            Next
+Retrans        113147          7             0x0
+TimeWait            0          0             0x0
+AckHold       5173821    3384060             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            0          0             0x0
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss:  989290136  snduna:  992583098  sndnxt:  992583098
+irs:  572603435  rcvnxt: 1837322873
+
+sndwnd:  32502  scale:      0  maxrcvwnd:  16384
+rcvwnd:  15939  scale:      0  delrcvwnd:    445
+
+SRTT: 1000 ms, RTTO: 1003 ms, RTV: 3 ms, KRTT: 0 ms
+minRTT: 0 ms, maxRTT: 1000 ms, ACK hold: 200 ms
+uptime: -1 ms, Sent idletime: 1228 ms, Receive idletime: 1432 ms 
+Status Flags: active open, sso candidate
+Option Flags: nagle, md5
+IP Precedence value : 6
+
+Datagrams (max data segment is 536 bytes):
+Rcvd: 5792430 (out of order: 27207), with data: 5686423, total data bytes: 1264719437
+Sent: 5758487 (retransmit: 7, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 115624, total data bytes: 3292961
+SSO last disable reason: Application disable (Active)
+
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+TCP Semaphore      0x7EBCC7D0  FREE 
+
+CBB-MEL3-920-MAFUME-01>
+CBB-MEL3-920-MAFUME-01>exit
