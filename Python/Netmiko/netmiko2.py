@@ -1,8 +1,8 @@
 # Importando las librerias
 from ast import parse
 from textwrap import indent
-import netmiko
-from netmiko import ConnectHandler
+import Netmiko
+from Netmiko import ConnectHandler
 import json
 
 
